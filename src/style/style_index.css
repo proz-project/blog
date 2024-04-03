@@ -1,0 +1,54 @@
+header{
+    background-color: blueviolet;
+}
+
+.banner {
+  background-color: antiquewhite;
+}
+
+
+aside {
+top: 0;
+right: 0;
+  margin-top: 10px;
+  width: 30%;
+  height:100%;
+  display: inline-block;
+  background-color: red;
+  height: 700px;
+}
+
+main {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 68%;
+  height:100%;
+  background-color: aqua;
+  display: inline-block;
+
+}
+
+.cartao{
+    display: flex;
+    background-color: blue;
+    margin: 5px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.painel-interacao{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
