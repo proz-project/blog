@@ -19,4 +19,11 @@
     text-decoration: none;
     padding: 15px;
 }
+@media screen and (max-width: 1440px){
+    .cabecalho-conteiner{
+        flex-direction: column;
 
+    }
+    
+    
+}

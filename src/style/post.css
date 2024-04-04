@@ -8,6 +8,9 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+.logo-footer {
+    padding: 10px;
+}
 
 .container {
     max-width: 800px;
@@ -57,4 +60,14 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1440px){
+    footer{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    
+}
 }
