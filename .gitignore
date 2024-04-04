@@ -5,6 +5,5 @@ tsconfig.tsbuildinfo
 __coverage
 .devcontainer/
 .vscode
-.Dockerfile
-docker-compose.yml
-docker-compose.override.yml
+Dockerfile/
+.yml
