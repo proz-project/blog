@@ -1,5 +1,5 @@
 header{
-    background-color: blueviolet;
+    background-color: rgb(104, 144, 184);
 }
 
 .banner {
@@ -14,7 +14,7 @@ right: 0;
   width: 30%;
   height:100%;
   display: inline-block;
-  background-color: red;
+  background-color: rgba(139, 53, 53, 0.74);
   height: 700px;
 }
 
@@ -25,14 +25,14 @@ main {
   margin-top: 0;
   width: 68%;
   height:100%;
-  background-color: aqua;
+  background-color: rgb(104, 144, 184);
   display: inline-block;
 
 }
 
 .cartao{
     display: flex;
-    background-color: blue;
+    background-color: rgba(66, 66, 177, 0.596);
     margin: 5px;
     height: 200px;
     flex-direction: column;
@@ -50,5 +50,5 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: rgb(104, 144, 184)
 }

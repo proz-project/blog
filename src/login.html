@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Informações Educacional Profissional Gratuita."/>
+    <meta name="robots" content="index, follow"/>
+    <meta title="EduPro - Qualificação Profissional"/>
+    <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos"/>
+    <meta name="theme-color" content="rgba(66, 66, 177, 0.596)">
 
-    <link rel="stylesheet" href="./style/style_Global.css">
+    
+    <title>Home</title>
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="stylesheet" href="./style/style_Global.css" />
+    <link rel="stylesheet" href="./style/style_index.css" />
+    <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
+    <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
 </head>
 <body>
     <header class="cabecalho">
         <div class="cabecalho-conteiner">
-            <img id="logo-principal" src="./img/logo.png" alt="logo qualificação profissional">
-            <nav class="cabecalho-navegacao-link">
-                <a class="link-cabecalho" href="./index.html">Home</a>
-                <a class="link-cabecalho" href="./politicaPrivacidade.html">politicas de privacidade</a>
-                <a class="link-cabecalho" href="./projeto.html">projetos</a>
-                <a class="link-cabecalho"  href="./login.html">Login</a>
-            </nav>
+        <img
+            id="logo-principal"
+            src="./img/svg/200x60.svg"
+            alt="logo qualificação profissional"
+            width="400px"
+            height="90px"
+        />
+        <nav class="cabecalho-navegacao-link">
+            <a class="link-cabecalho" href="./index.html">Home</a>
+            <a class="link-cabecalho" href="./politicaPrivacidade.html" >Politicas de Privacidade</a
+            >
+            <a class="link-cabecalho" href="./projeto.html">Projetos</a>
+            <a class="link-cabecalho" href="./login.html">Login</a> </nav>
         </div>
-    </header>
+</header>
+<div class="login-form">
+    <form action="./login.js" method="post">
+        <h2>Login</h2>
+
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" required>
+        <label for="password"> Senha: </label>"
+        <input type="password" id="passaword" name="password" required>
+        <button type="submit">Entrar</button>
+
+    </form>
+        
+</div>
+<footer>
+    <div class="list-contato">
+    <h3>telefone</h3>
+        <p>XXXXXXXXXXX</p>
+        <h3>email</h3>
+        <p>#####@dominio.br</p>
+    </div>
+    <img id="logo-principal"  src="./img/svg/200x60.svg" alt="logo qualificação profissional"/>
+</footer>
+
 </body>
 </html>
