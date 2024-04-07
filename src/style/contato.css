@@ -1,0 +1,68 @@
+.cabecalhohead {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.posicao2head {
+    text-align: center;
+}
+
+.meiohead {
+    width: 80%;
+    margin: 0 auto
+}
+
+.conteiner {
+    width: 50%;
+    margin: auto;
+
+}
+
+.formulario {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.campo {
+
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0, 4em;
+
+    display: block;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: navajowhite;
+    border-right: navajowhite;
+    border-bottom: 2px solid;
+}
+
+.campo {
+    margin: 1em 0;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid;
+}
+
+p small {
+    color: #ff0000;
+}
+
+.botaohead button {
+    background: #0388a6;
+    padding: 10px 20px;
+    color: #FFF;
+    border: 2px solid #0388a6;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
