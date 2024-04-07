@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -26,6 +26,7 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     background-color: lightblue;
+    margin:auto
 }
 
 nav {
@@ -70,4 +71,6 @@ footer {
         flex-direction: column;
     
 }
+
+
 }
