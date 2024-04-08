@@ -1,0 +1,11 @@
+version: 'latest'
+
+services:
+  app:
+    build: .
+    container_name: blog
+    command: .docker/start.sh
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 3000:3000
