@@ -6,6 +6,7 @@
 
 #logo-principal{
     width: 150px;
+    text-align: center;
 }
 
 .cabecalho-conteiner{
@@ -23,7 +24,5 @@
     .cabecalho-conteiner{
         flex-direction: column;
 
-    }
-    
-    
+    }    
 }

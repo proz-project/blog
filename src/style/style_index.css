@@ -1,62 +1,72 @@
-header{
-    background-color: rgb(104, 144, 184);
+header {
+  background-color: rgb(104, 144, 184);
+}
+
+h1{
+  color: rgb(30, 30, 165);
 }
 
 .banner {
-  background-color: rgb(203, 200, 196);
+  /* background-color: rgb(203, 200, 196); */
+  text-align: center;
+  padding: 10px;
 }
 
-.login-form{
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 10px;
+.login-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
 
 }
 
 
 aside {
-bottom:0;
-top: 0;
-right: 0;
-  margin-top: 10px;
+  float: right;
+  margin: 10px;
   width: 30%;
-  height:50%;
-  display: inline-block;
   background-color: rgba(239, 212, 212, 0.74);
-  height: 700px;
+  height: auto;
+  padding: 5px 10px;
 }
 
 main {
-  position: relative;
+  float:left;
+  text-align: center;
   top: 0;
   left: 0;
   margin-top: 0;
-  width: 68%;
-  height:100%;
-  background-color: rgb(104, 144, 184);
-  display: inline-block;
+  width: 67%;
+  height: 100%;
+  /* background-color: rgb(104, 144, 184); */
 
 }
 
-.cartao{
-    display: flex;
-    background-color: rgba(162, 162, 220, 0.596);
-    margin: 5px;
-    height: 200px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.md-6{
+  width: 67%;
+  float: left;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+.cartao {
+  display: flex;
+  background-color: rgba(162, 162, 220, 0.596);
+  margin: 5px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.painel-interacao{
-    display: flex;
-    flex-direction: row;
+.painel-interacao {
+  display: flex;
+  flex-direction: row;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(104, 144, 184)
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(104, 144, 184)
 }
