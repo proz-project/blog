@@ -24,18 +24,23 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     background-color: lightblue;
-    margin: auto
+    margin: auto;
 }
 
 nav {
     text-align: center;
     margin-bottom: 20px;
+    /* width: 600px; */
+    height: 600%;
+    background-color: lightsalmon;
 }
 
 nav a {
+
     text-decoration: none;
     color: #333;
-    padding: 10px 20px;
+    padding: 20px 20px;
+
 }
 
 nav a:hover {

@@ -39,31 +39,6 @@ body {
     height: 100vh;
 }
 
-#login .container #login-row #login-column #login-box {
-    margin-top: 120px;
-    max-width: 600px;
-    height: 320px;
-    border: 1px solid #9C9C9C;
-    background-color: #EAEAEA;
-}
-
-#login .container #login-row #login-column #login-box #login-form {
-    padding: 20px;
-}
-
-#login .container #login-row #login-column #login-box #login-form #register-link {
-    margin-top: -85px;
-}
-
-.logo-footer {
-    margin-bottom: 0px;
-
-}
-
-.logo-footer {
-    margin-bottom: 0px;
-
-}
 
 footer {
     clear: both;
@@ -71,4 +46,15 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
+}
+
+#login {
+    margin: auto;
+    width: 200px;
+    height: 60%;
+
+}
+
+#footerid {
+    width: 100%;
 }

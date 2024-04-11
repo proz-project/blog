@@ -14,46 +14,40 @@
     <title>Login - EduPro - Qualificação Profissional</title>
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./style/style_index.css" />
+    <link rel="stylesheet" href="./style/style_Global.css" />
     <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
     <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./style/post.css">
     <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
-<iframe scrolling="no" src="./header.html" frameborder="0" width="100%" id="frame-spec"></iframe>
 
 <body>
-    <div class="container">
-        <div id="login-row" class="row justify-content-center align-items-center">
-            <div id="login-column" class="col-md-6">
-                <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" action="./login.js" method="post">
-                        <h3 class="text-center text-info">Login</h3>
-                        <div class="form-group">
-                            <label for="username" class="text-info">Usuário:</label><br>
-                            <input type="text" name="username" id="username" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="text-info">Senha:</label><br>
-                            <input type="text" name="password" id="password" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="remember-me" class="text-info"><span>Lembre-me</span> <span><input
-                                        id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                            <button type="submit" name="submit" class="btn btn-info btn-md"
-                                value="submit">Entrar</button>
-                            <button type="reset" name="reset" class="btn btn-info btn-md" value="reset">Limpar</button>
-                        </div>
+    <iframe scrolling="no" src="./header.html" frameborder="0" width="100%" id="frame-spec"></iframe>
+    <div id="login">
+        <fieldset>
+            <div class form action="./login.js" method="post">
+                <h2>Login</h2>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" required>
+                <label for="password"> Senha: </label>"
+                <input type="password" id="passaword" name="password" required>
+                <button type="submit">Entrar</button>
+                <button type="Reset">Limpar</button>
 
-                    </form>
-                </div>
+                </form>
+
             </div>
-        </div>
-    </div>
-    </div>
-    <iframe scrolling="no" src="./footer.html" frameborder="0" width="100%" id="frame-spec"></iframe>
+        </fieldset>
+        <footer>
+            <div class="list-contato">
+                <p>&copy; 2024 EduPro - Educação Profissional.</p>Todos os direitos reservados.</p>
+                <img class="logo-footer" src="./img/svg/200x60.svg" alt="logo qualificação profissional" width="30%" />
+            </div>
+
+        </footer>
+
 </body>
 
 </html>
+{# <iframe scrolling="no" src="./footer.html" frameborder="0" width="100%" id="frame-spec"></iframe> #}
