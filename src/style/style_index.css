@@ -2,14 +2,8 @@ header {
   background-color: rgb(104, 144, 184);
 }
 
-h1{
-  color: rgb(30, 30, 165);
-}
-
 .banner {
-  /* background-color: rgb(203, 200, 196); */
-  text-align: center;
-  padding: 10px;
+  background-color: rgb(203, 200, 196);
 }
 
 .login-form {
@@ -21,31 +15,27 @@ h1{
 
 
 aside {
-  float: right;
-  margin: 10px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
   width: 30%;
+  height: 50%;
+  display: inline-block;
   background-color: rgba(239, 212, 212, 0.74);
-  height: auto;
-  padding: 5px 10px;
+  height: 700px;
 }
 
 main {
-  float:left;
-  text-align: center;
+  position: relative;
   top: 0;
   left: 0;
   margin-top: 0;
-  width: 67%;
+  width: 68%;
   height: 100%;
-  /* background-color: rgb(104, 144, 184); */
+  background-color: rgb(104, 144, 184);
+  display: inline-block;
 
-}
-
-.md-6{
-  width: 67%;
-  float: left;
-  margin-top: 10px;
-  padding-right: 10px;
 }
 
 .cartao {
@@ -65,8 +55,13 @@ main {
 }
 
 footer {
-  display: flex;
+  margin-top: 7%;
+  position: fixed;
+  display: 100%;
+  bottom: 0;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgb(104, 144, 184)
+  text-align: center;
+  z-index: 9999;
 }

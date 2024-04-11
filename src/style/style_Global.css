@@ -40,21 +40,10 @@ body {
 }
 
 
-footer {
-    clear: both;
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-}
+
 
 #login {
     margin: auto;
     width: 200px;
     height: 60%;
-
-}
-
-#footerid {
-    width: 100%;
 }

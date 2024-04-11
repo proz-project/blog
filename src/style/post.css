@@ -32,7 +32,6 @@ nav {
     margin-bottom: 20px;
     /* width: 600px; */
     height: 600%;
-    background-color: lightsalmon;
 }
 
 nav a {
@@ -57,7 +56,6 @@ aside {
     float: left;
     width: 67%;
 }
-
 
 @media screen and (max-width: 1440px) {
     footer {
