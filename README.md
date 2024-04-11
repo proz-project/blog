@@ -13,7 +13,6 @@
   <img src="https://contrib.rocks/image?repo=proz-project/blog" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 O projeto é construir um blog funcional e inovador para atender às necessidades de uma instituição de educação profissional presencial, contendo pelo menos 5 páginas. O blog deve incluir imagens, formulários e adotar as melhores práticas de usabilidade e acessibilidade, utilizando os recursos mais recentes disponíveis.
 
 ##### Stack de Desenvolvimento:
