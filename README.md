@@ -8,8 +8,12 @@
 ### Desenvolvimento de site com uso de somente HTML, CSS, JavaScript e Bootstrap.
 
 #### Projeto com equipe de 6 membros com entrega de sprints semanais.
-@dayanearauj0 @RafaelAlvesTech @Renato007 @RMoreira13
+- @dayanearauj0 @Icognita @RafaelAlvesTech @Renato007 @RMoreira13
+<a href="https://github.com/proz-project/blog/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=proz-project/blog" />
+</a>
 
+Made with [contrib.rocks](https://contrib.rocks).
 O projeto é construir um blog funcional e inovador para atender às necessidades de uma instituição de educação profissional presencial, contendo pelo menos 5 páginas. O blog deve incluir imagens, formulários e adotar as melhores práticas de usabilidade e acessibilidade, utilizando os recursos mais recentes disponíveis.
 
 ##### Stack de Desenvolvimento:
