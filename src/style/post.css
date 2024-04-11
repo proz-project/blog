@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
 .logo-footer {
     padding: 10px;
 }
@@ -26,7 +27,7 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     background-color: lightblue;
-    margin:auto
+    margin: auto
 }
 
 nav {
@@ -57,20 +58,23 @@ aside {
 
 footer {
     clear: both;
+    display: flex;
+    position: sticky;
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
 }
 
-@media screen and (max-width: 1440px){
-    footer{
+@media screen and (max-width: 1440px) {
+    footer {
         flex-direction: column;
     }
-    nav{
+
+    nav {
         flex-direction: column;
-    
-}
+
+    }
 
 
 }
