@@ -1,29 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
 header {
-  background-color: rgb(104, 144, 184);
+  background-color: rgb(51, 115, 179);
+  font-size: 1.2em;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  height: 100%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(70, 48, 151);
+}
+
+nav ul li a:hover{
+  color: orange;
+  align-items: center;
+  
 }
 
 .banner {
-  background-color: rgb(203, 200, 196);
-}
-
-.login-form {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 10px;
-
-}
-
-
-aside {
-  bottom: 0;
-  top: 0;
-  right: 0;
-  margin-top: 10px;
-  width: 30%;
-  height: 50%;
-  display: inline-block;
-  background-color: rgba(239, 212, 212, 0.74);
-  height: 700px;
+  background-color: rgb(255, 145, 0);
+  text-align: center;
 }
 
 main {
@@ -38,20 +57,16 @@ main {
 
 }
 
-.cartao {
-  display: flex;
-  background-color: rgba(162, 162, 220, 0.596);
-  margin: 5px;
-  height: 200px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.painel-interacao {
-  display: flex;
-  flex-direction: row;
+aside {
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  background-color: rgba(239, 212, 212, 0.74);
+  height: 700px;
 }
 
 footer {
@@ -64,4 +79,61 @@ footer {
   align-items: center;
   text-align: center;
   z-index: 9999;
+}
+
+#logo-principal {
+  width: 150px;
+  text-align: center;
+}
+
+#login {
+  margin: auto;
+  width: 200px;
+  height: 60%;
+}
+
+.login-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.cartao {
+  display: flex;
+  background-color: rgba(162, 162, 220, 0.596);
+  margin: 5px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.painel-interacao {
+  display: flex;
+  flex-direction: row;
+}
+
+.cabecalho-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.link-cabecalho {
+  text-decoration: none;
+  padding: 15px;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1440px) {
+  .cabecalho-conteiner {
+    flex-direction: column;
+
+  }
+
+  footer {
+    /* flex-direction: column; */
+  }
 }
