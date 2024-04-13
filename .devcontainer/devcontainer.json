@@ -16,7 +16,8 @@
   "workspaceFolder": "/home/node/app",
 
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "node.nodePath": "/usr/local/bin/node"
   },
   "extensions": [
     "adpyke.codesnap",
