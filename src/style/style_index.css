@@ -4,27 +4,40 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2{
+  padding: 20px;
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background-color: #f8f8f8;
 }
 
 header {
-  background-color: rgb(51, 115, 179);
+  background-color: lightblue;
   font-size: 1.2em;
-  padding: 8px;
+  padding: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 ul {
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  margin-left: 12px;
   height: 100%;
+  font-weight: bold;
 }
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+} 
 
 nav ul li {
   list-style: none;
@@ -36,49 +49,33 @@ nav ul li a {
 
 nav ul li a:hover{
   color: orange;
-  align-items: center;
-  
+  align-items: center;  
 }
 
-.banner {
-  background-color: rgb(255, 145, 0);
-  text-align: center;
-}
-
-main {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-top: 0;
-  width: 68%;
-  height: 100%;
-  background-color: rgb(104, 144, 184);
-  display: inline-block;
-
+main { 
+  background-color: rgb(121, 37, 86);
+  padding: 10px;
+  width: auto;
+  height: auto;
 }
 
 aside {
-  bottom: 0;
-  top: 0;
-  right: 0;
-  margin-top: 10px;
-  width: 30%;
-  height: 50%;
-  display: inline-block;
   background-color: rgba(239, 212, 212, 0.74);
-  height: 700px;
-}
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  height: 100%;
+  
+} 
 
 footer {
-  margin-top: 7%;
-  position: fixed;
-  display: 100%;
-  bottom: 0;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  justify-content:space-evenly;
+  padding: 8px;
+  background-color: lightblue;
+  width: 100%; 
   text-align: center;
-  z-index: 9999;
 }
 
 #logo-principal {
@@ -88,8 +85,30 @@ footer {
 
 #login {
   margin: auto;
-  width: 200px;
-  height: 60%;
+  width: auto;
+  height: 100vh;
+}
+
+.logo {
+  padding-top: 20px;
+}
+
+.banner {
+  background-color: rgb(255, 145, 0);
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.posts {
+  float: left;
+  width: 67%;
 }
 
 .login-form {
@@ -130,8 +149,11 @@ footer {
 @media screen and (max-width: 1440px) {
   .cabecalho-conteiner {
     flex-direction: column;
-
   }
+
+    nav {
+        flex-direction: column;
+    }
 
   footer {
     /* flex-direction: column; */
