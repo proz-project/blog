@@ -23,22 +23,30 @@
 
 
 
-  <title>Sobre nós - EduPro - Qualificação Profissional</title>
+  <title>Quem somos</title>
   <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_Global.css" />
   <link rel="stylesheet" href="./style/style_index.css" />
-  <link rel="stylesheet" href="./style/post.css" />
-
-
   <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
   <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
 </head>
 
 <body>
-  <iframe scrolling="no" src="./header.html" frameborder="0" width="100%" id="frame-spec"></iframe>
+  <header class="logo">
+    <img src="./img/5.png" alt="logo-EducaPro" width="20%">
+    <nav>
+      <ul>
+        <li><a target="_parent" href="./index.html">EducaPro</a></li>
+        <li><a target="_parent" href="./post.html">Blog</a></li>
+        <li><a target="_parent" href="./about.html">Quem Somos</a></li>
+        <li><a target="_parent" href="./contato.html">Contato</a></li>
+        <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
+        <li><a target="_parent" href="./login.html">Entrar <span class="glyphicon glyphicon-user"></span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="container">
+  
     <section class="banner">
       <div class="banner-caixa-texto">
         <h1 class="banner-title">
@@ -163,7 +171,7 @@
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-                </buton>
+              </button>
             </div>
           </div>
 
@@ -214,17 +222,15 @@
               </div>
             </div>
             <!-- acordeao fim -->
-
-
-
-
           </div>
         </div>
       </main>
-
     </section>
 
-    <iframe scrolling="no" src="./footer.html" frameborder="0" width="100%" id="frame-spec"></iframe>
+    <footer class="logo-footer">
+      <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
+      <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
+  </footer>
 </body>
 
 </html>
