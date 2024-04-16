@@ -17,13 +17,12 @@ body {
 }
 
 header {
-  background-color: lightblue;
-  font-size: 1.2em;
-  padding: 12px;
+  background-color: black;
+  font-size: 1.4em;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 ul {
@@ -44,16 +43,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(70, 48, 151);
+  color: rgb(255, 255, 255);
 }
 
 nav ul li a:hover{
-  color: orange;
+  color: #ffc106;
   align-items: center;  
 }
 
 main { 
-  background-color: rgb(121, 37, 86);
+  background-color: #ffc106;
   padding: 10px;
   width: auto;
   height: auto;
@@ -71,12 +70,18 @@ aside {
 
 footer {
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
+  align-items: center;
   padding: 8px;
-  background-color: lightblue;
+  background-color:black;
   width: 100%; 
   text-align: center;
 }
+
+footer p {
+  color: white;
+}
+
 
 #logo-principal {
   width: 150px;
@@ -90,18 +95,20 @@ footer {
 }
 
 .logo {
-  padding-top: 20px;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .banner {
-  background-color: rgb(255, 145, 0);
+  background-color: rgb(209, 194, 107);
   text-align: center;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px;
+  /**padding: 20px;**/
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -119,7 +126,7 @@ footer {
 
 .cartao {
   display: flex;
-  background-color: rgba(162, 162, 220, 0.596);
+  background-color: rgb(209, 194, 107);
   margin: 5px;
   height: 200px;
   flex-direction: column;
