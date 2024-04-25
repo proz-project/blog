@@ -13,7 +13,7 @@
 
   <title>Login - EduPro - Qualificação Profissional</title>
   <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_index.css" />
+  <link rel="stylesheet" href="./style/style_login.css" />
   <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
   <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
@@ -37,21 +37,56 @@
       </ul>
     </nav>
   </header>
-
-  <div id="login">
-    <fieldset>
-      <div class form action="./login.js" method="post">
-        <form>
-          <h2>Login</h2>
-          <label for="email"> Email: </label>
-          <input type="email" id="email" name="email" required>
-          <label for="password"> Senha: </label>"
-          <input type="password" id="passaword" name="password" required>
-          <button type="submit">Entrar</button>
-          <button type="Reset">Limpar</button>
-        </form>
+    <div class="container">
+      <div class="content first-content">
+        <div class="first-column">
+          <h2 class="title">Bem vindo de volta!</h2>
+          <p class="description">Para se manter conectado conosco</p>
+          <p class="description">por favor faça login com suas informações pessoais</p>
+          <button class="btn">entrar</button>
+        </div>
+        <div class="second-column">
+          <h2 class="title">Criar conta</h2>
+          <div class="social-media">
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Gmail</a></li>
+            </ul>
+          </div><!--SOCIAL MEDIA-->
+          <p class="description">ou use seu e-mail para cadastro</p>         
+          <form >
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="usuario@dominio.com">
+            <input type="password" placeholder="digite sua senha">
+            <button class="btn">Entrar</button>
+          </form>
+        </div><!--FINAL DA SEGUNDA COLUNA-->
+      </div><!--FINAL DO PRIMEIRO CONTEINER-->
+    </div>
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title">HELLO!</h2>
+        <p class="description">Insira seus dados pessoais aqui!</p>
+        <p class="description">e comece a jornada conosco</p>
+        <button class="btn">entrar</button>
       </div>
-    </fieldset>
+      <div class="second-column">
+        <h2 class="title">Entrar no ambiente</h2>
+        <div class="social-media">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Gmail</a></li>
+          </ul>
+        </div><!--SOCIAL MEDIA-->
+        <p class="description">ou use sua conta de e-mail</p>         
+        <form >
+          <input type="email" placeholder="usuario@dominio.com">
+          <input type="password" placeholder="digite sua senha">
+          <a href="#">Escqueceu sua senha?</a>
+          <button class="btn">Entrar</button>
+        </form>
+      </div><!--FINAL DA SEGUNDA COLUNA-->
+    </div><!--FINAL DO SEGUNDO CONTEINER-->
 
     <footer class="logo-footer">
       <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />

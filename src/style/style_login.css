@@ -1,0 +1,94 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+/* CABEÇALHO */
+header {
+  background-color: black;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  height: 100%;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+} 
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover{
+  color: #ffc106;
+  align-items: center;  
+}
+
+/* PARTE DO LOGIN */
+
+
+/* RODAPÉ */
+footer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 8px;
+  background-color:black;
+  width: 100%; 
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+
+#logo-principal {
+  width: 150px;
+  text-align: center;
+}
+
+#login {
+  margin: auto;
+  width: auto;
+  height: 100vh;
+}
+
+.logo {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  background-color: rgb(209, 194, 107);
+  text-align: center;
+}
