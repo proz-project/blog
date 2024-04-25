@@ -48,7 +48,6 @@ main {
 
 footer {
   display: flex;
-  position: sticky;
   justify-content: center;
   align-items: center;
   background-color: green;
