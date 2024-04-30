@@ -12,31 +12,31 @@
 
 
   <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_Global.css" />
   <link rel="stylesheet" href="./style/style_index.css" />
   <link rel="stylesheet" href="./style/contato.css" />
-  <link rel="stylesheet" href="./style/post.css">
   <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
   <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style/post.css">
   <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
-  <title>Home</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Contato</title>
 </head>
 
 <body>
   <header class="logo">
-    <img src="./img/svg/200x60.svg" alt="logo" width="35%">
+    <img src="./img/5.png" alt="logo-EducaPro" width="20%">
+    <nav>
+      <ul>
+        <li><a target="_parent" href="./index.html">EducaPro</a></li>
+        <li><a target="_parent" href="./post.html">Blog</a></li>
+        <li><a target="_parent" href="./about.html">Quem Somos</a></li>
+        <li><a target="_parent" href="./contato.html">Contato</a></li>
+        <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
+        <li><a target="_parent" href="./login.html">Entrar <span class="glyphicon glyphicon-user"></span></a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./post.html">Blog</a>
-    <a href="./about.html">Sobre</a>
-    <a href="./privacy.html">Privacy</a>
-    <a href="./contato.html">Contato</a>
-    <a href="./login.html">Login</a>
-  </nav>
-
   <section class="meiohead">
     <div class="cabecalhohead">
       <h1 id="posicao2head"> Contato </h1>
@@ -45,58 +45,64 @@
       <p>Envie comentários, sugestões, dúvidas, ou mesmo uma reclamação</p>
     </div>
 
-    <form action="" method="POST" class="formulario">
+    <form action="" method="POST" class="formulario" onsubmit="return validarFormulario()">
 
       <div class="campo1">
         <p> <small>Campos com (*) asterisco são obrigatórios</small></p>
       </div>
-
+    
       <div class="campo">
         <label> <strong>*Nome Completo</strong></label>
-        <input type="text" nome="nome" id=" Nome" required>
+        <input type="text" name="nome" id="nome" required>
+        <div id="erroNome" style="color: red;"></div>
       </div>
       <div class="campo">
-        <label> <strong>*E-mail"</strong> </label>
+        <label> <strong>*E-mail</strong> </label>
         <input type="email" id="email" required>
+        <div id="erroEmail" style="color: red;"></div>
       </div>
       <div class="campo">
-        <label for="*telefone"> <strong>Telefone</strong> </label>
+        <label for="telefone"> <strong>Telefone</strong> </label>
         <input type="tel" id="telefone" required placeholder="(XX) - X XXXX-XXXX">
+        <div id="erroTelefone" style="color: red;"></div>
       </div>
       <div class="campo">
         <label> <strong>Endereço</strong> </label>
         <input type="text">
       </div>
-
+    
       <div class="campo">
         <label for="bairro"> <strong>Bairro</strong> </label>
         <input type="text" id="bairro">
       </div>
       <div class="campo">
-        <label for=" cep"> <strong>CEP</strong> </label>
+        <label for="cep"> <strong>CEP</strong> </label>
         <input type="number" id="cep">
       </div>
       <div class="campo">
-        <label for=" estado"> <strong>Estado</strong></label>
-        <input type="tel" id="tel">
+        <label for="estado"> <strong>Estado</strong></label>
+        <input type="text" id="estado">
       </div>
       <div class="campo">
-        <label for=" mensagens"><strong>Mensagem</strong> </label>
-        <textarea name="msg" id="" cols="" rows="10" id="Msg" required></textarea>
+        <label for="mensagens"><strong>Mensagem</strong> </label>
+        <textarea name="msg" id="msg" cols="" rows="10" required></textarea>
       </div>
       <div class="botaohead">
         <button type="submit">Enviar</button>
-      </div>
-
+      </div><br>
+    
+      <!-- Elemento para exibir a mensagem de sucesso -->
+      <div id="mensagemSucesso" style="display: none; color: green;">Formulário enviado com sucesso!</div>
+    
     </form>
+    
   </section>
 
-  <footer>
-    <div class="list-contato">
-      <p>&copy; 2024 EduPro - Educação Profissional. Todos os direitos reservados.</p>
-    </div>
-    <img class="logo-footer" src="./img/svg/200x60.svg" alt="logo qualificação profissional" width="25%" />
-  </footer>
+  <footer class="logo-footer">
+    <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
+    <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
+</footer>
+<script src="contato.js"></script>
 </body>
 
 </html>
