@@ -44,57 +44,64 @@
     <div>
       <p>Envie comentários, sugestões, dúvidas, ou mesmo uma reclamação</p>
     </div>
-
-    <form action="" method="POST" class="formulario">
+    <form action="" method="POST" class="formulario" onsubmit="return validarFormulario()">
 
       <div class="campo1">
         <p> <small>Campos com (*) asterisco são obrigatórios</small></p>
       </div>
-
+    
       <div class="campo">
         <label> <strong>*Nome Completo</strong></label>
-        <input type="text" nome="nome" id=" Nome" required>
+        <input type="text" name="nome" id="nome" required>
+        <div id="erroNome" style="color: red;"></div>
       </div>
       <div class="campo">
-        <label> <strong>*E-mail"</strong> </label>
+        <label> <strong>*E-mail</strong> </label>
         <input type="email" id="email" required>
+        <div id="erroEmail" style="color: red;"></div>
       </div>
       <div class="campo">
-        <label for="*telefone"> <strong>Telefone</strong> </label>
+        <label for="telefone"> <strong>Telefone</strong> </label>
         <input type="tel" id="telefone" required placeholder="(XX) - X XXXX-XXXX">
+        <div id="erroTelefone" style="color: red;"></div>
       </div>
       <div class="campo">
         <label> <strong>Endereço</strong> </label>
         <input type="text">
       </div>
-
+    
       <div class="campo">
         <label for="bairro"> <strong>Bairro</strong> </label>
         <input type="text" id="bairro">
       </div>
       <div class="campo">
-        <label for=" cep"> <strong>CEP</strong> </label>
+        <label for="cep"> <strong>CEP</strong> </label>
         <input type="number" id="cep">
       </div>
       <div class="campo">
-        <label for=" estado"> <strong>Estado</strong></label>
-        <input type="tel" id="tel">
+        <label for="estado"> <strong>Estado</strong></label>
+        <input type="text" id="estado">
       </div>
       <div class="campo">
-        <label for=" mensagens"><strong>Mensagem</strong> </label>
-        <textarea name="msg" id="" cols="" rows="10" id="Msg" required></textarea>
+        <label for="mensagens"><strong>Mensagem</strong> </label>
+        <textarea name="msg" id="msg" cols="" rows="10" required></textarea>
       </div>
       <div class="botaohead">
         <button type="submit">Enviar</button>
       </div><br>
+    
+     //  para exibir a mensagem de sucesso 
+      <div id="mensagemSucesso" style="display: none; color: green;">Formulário enviado com sucesso!</div>
+    
+    </form>    
 
-    </form>
   </section>
 
   <footer class="logo-footer">
     <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
     <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
 </footer>
+ <script src="contato.js"></script>
 </body>
 
 </html>
