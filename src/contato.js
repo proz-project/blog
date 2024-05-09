@@ -1,6 +1,7 @@
 function validarFormulario() {
     var nome = document.getElementById('nome').value.trim();
     var telefone = document.getElementById('telefone').value.trim();
+    var cep=document.getElementById()
     var regexLetras = /^[a-zA-Z\s]+$/;
     var regexNumeros = /^[0-9]+$/;
     var camposValidos = true;
