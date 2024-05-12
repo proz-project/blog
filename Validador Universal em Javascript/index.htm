@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<HTML 
+xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Validador Javascript</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT src="trabalho_JS.js" type=text/javascript></SCRIPT>
+<LINK href="estilo.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.3314" name=GENERATOR></HEAD>
+<BODY>
+<FORM onSubmit="return valida_enviar(this)" action=#>
+<TABLE id=total cellSpacing=0 cellPadding=0 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width="96%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=titulo colSpan=3>Validador Universal</TD></TR>
+        <TR>
+          <TD class=espaco width="19%">Nome:</TD>
+          <TD width="42%"><INPUT onKeyPress="valida_digitos('nome')" id=nome sonblur="valida_campos('nome')" onFocus="informa('nome')" 
+          name=nome></TD>
+          <TD width="39%">
+            <DIV id=respostanome style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco width="19%">Senha:</TD>
+          <TD width="42%"><INPUT id=senha onBlur="valida_campos('senha')" 
+            onfocus="informa('senha')" type=password name=senha></TD>
+          <TD width="39%">
+            <DIV id=respostasenha style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>Sexo:</TD>
+          <TD><INPUT id=sexo onClick="limpaID('sexo')" type=radio value=1 
+            name=sexo> masculino&nbsp;&nbsp; <INPUT id=sexo 
+            onclick="limpaID('sexo')" type=radio value=2 name=sexo> feminino</TD>
+          <TD>
+            <DIV id=respostasexo style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>Estado:</TD>
+          <TD><SELECT id=uf 
+            onchange="limpaID('uf'),informa('uf'),valida_cep('cep')" name=uf> 
+              <OPTION value=selecione selected>Selecione</OPTION> <OPTION 
+              value=AC>AC</OPTION> <OPTION value=AL>AL</OPTION> <OPTION 
+              value=AM>AM</OPTION> <OPTION value=AP>AP</OPTION> <OPTION 
+              value=BA>BA</OPTION> <OPTION value=CE>CE</OPTION> <OPTION 
+              value=DF>DF</OPTION> <OPTION value=ES>ES</OPTION> <OPTION 
+              value=GO>GO</OPTION> <OPTION value=MA>MA</OPTION> <OPTION 
+              value=MG>MG</OPTION> <OPTION value=MS>MS</OPTION> <OPTION 
+              value=MT>MT</OPTION> <OPTION value=PA>PA</OPTION> <OPTION 
+              value=PB>PB</OPTION> <OPTION value=PE>PE</OPTION> <OPTION 
+              value=PI>PI</OPTION> <OPTION value=PR>PR</OPTION> <OPTION 
+              value=RJ>RJ</OPTION> <OPTION value=RN>RN</OPTION> <OPTION 
+              value=RO>RO</OPTION> <OPTION value=RR>RR</OPTION> <OPTION 
+              value=RS>RS</OPTION> <OPTION value=SC>SC</OPTION> <OPTION 
+              value=SE>SE</OPTION> <OPTION value=SP>SP</OPTION> <OPTION 
+              value=TO>TO</OPTION></SELECT></TD>
+          <TD>
+            <DIV id=respostauf style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>CEP:</TD>
+          <TD><INPUT onKeyPress="valida_digitos('cep')" id=cep 
+            onkeydown="formata('cep')" onBlur="valida_cep('cep')" 
+            onfocus="informa('cep')" name=cep></TD>
+          <TD>
+            <DIV id=respostacep style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>CPF:</TD>
+          <TD><INPUT onKeyPress="valida_digitos('cpf')" id=cpf 
+            onblur="validar_CPF('cpf')" onKeyUp="formata('cpf')" 
+            onfocus="informa('cpf')" maxLength=14 name=cpf> </TD>
+          <TD>
+            <DIV id=respostacpf style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>RG:</TD>
+          <TD><INPUT onKeyPress="valida_digitos('rg')" id=rg 
+            onblur="valida_campos('rg')" onKeyUp="formata('rg')" 
+            onfocus="informa('rg')" name=rg></TD>
+          <TD>
+            <DIV id=respostarg style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco>Data:</TD>
+          <TD><INPUT onKeyPress="valida_digitos('data')" id="data" onBlur="validar_Data('data')" onKeyUp="formata('data')" 
+            onfocus="informa('data')" name=data></TD>
+          <TD>
+            <DIV id=respostadata style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD class=espaco height=26>E-mail:</TD>
+          <TD><INPUT id=email onBlur="valida_campos('email')" 
+            onfocus="informa('email')" name=email></TD>
+          <TD>
+            <DIV id=respostaemail style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD></TD>
+          <TD><INPUT id=assinar onClick="limpaID('assinar')" type=checkbox 
+            value=assinar name=assinar> aceito os termos</TD>
+          <TD>
+            <DIV id=respostaassinar style="COLOR: red"></DIV></TD></TR>
+        <TR>
+          <TD colSpan=3 height=23>
+            <DIV align=center><INPUT type=submit value=enviar name=submit> 
+          </DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM></BODY></HTML>
