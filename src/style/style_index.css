@@ -17,7 +17,7 @@ body {
 
 header {
   background-color: black;
-  font-size: 1.1em;
+  font-size: 1.4em;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -84,7 +84,7 @@ footer {
   text-align: center;
   position: relative;
   margin-bottom: 0px;
-  font-size: 0.8em;
+
 }
 
 footer p {
