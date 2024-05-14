@@ -246,5 +246,32 @@ footer p {
 .text-box {
   padding: 20px;
   margin: 24px;
-  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 66%;
+  max-width: 66%;
+  max-width: 960px;
+  margin: 0 auto;
+
+
+}
+
+.text-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 16px;
+
+}
+
+
+.item {
+  list-style-type: disc;
+  margin-left: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+
+
 }
