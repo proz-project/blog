@@ -2,11 +2,18 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
 h1, h2{
   padding: 20px;
   text-align: center;
+  color: hsl(0, 0%, 0%)
+}
+
+article p {
+  font-size: 1.5em;
+  color: black;
 }
 
 body {
@@ -27,6 +34,7 @@ header {
 
 ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: 12px;
   height: 100%;
@@ -52,10 +60,14 @@ nav ul li a:hover{
 }
 
 main { 
-  background-color: #ffc106;
+  background-color: #000;
   padding: 10px;
   width: auto;
   height: auto;
+}
+
+main h2{
+  color: white;
 }
 
 aside {
@@ -94,6 +106,7 @@ footer p {
   height: 100vh;
 }
 
+
 .logo {
   padding-top: 8px;
   display: flex;
@@ -103,6 +116,10 @@ footer p {
 .banner {
   background-color: rgb(209, 194, 107);
   text-align: center;
+}
+
+.banner-title{
+  color: black;
 }
 
 .container {

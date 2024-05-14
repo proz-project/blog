@@ -17,12 +17,14 @@
   <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
   <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 
 <body>
   <header class="logo">
     <img src="./img/5.png" alt="logo-EducaPro" width="20%">
+    
     <nav>
       <ul>
         <li><a target="_parent" href="./index.html">EducaPro</a></li>
@@ -39,19 +41,52 @@
     <section class="banner">
       <div class="banner-caixa-texto">
         <h1 class="banner-title">
-          Seja bem vindo ao nosso blog de qualificação profissional,
-        </h1><br>
+          Seja bem vindo ao nosso blog de qualificação profissional
+        </h1>
 
-        <img src="img/pagina_em_construção.png" width="400px" alt="página em construção" />
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/1.png" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/3.png" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/5.png"  alt="...">
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div><br>
 
-        <h3 class="banner-subtitulo">
+        <!-- <aside class="libras">
+          <div vw class="enabled">
+              <div vw-access-button class="active"></div>
+              <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                  new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
+          </div>
+        </aside> -->
+
+        <p>
           É um website para ajudar jovens e adolescentes de Vila Isabel-Rj ou de
           outras regiões, em situações de vulnerabilidade, ao acesso de
           informação de projetos sociais ofertadas pela Instituição INATOS na
           formação de cursos de qualificação profissional que colabora na sua
           inserção para o mercado de trabalho, aumentando suas chances de
           conseguir ser aprovado em processos seletivos
-        </h3><br>
+        </p><br>
 
         <p class="banner-descricao">
           Funciona como um portal de educação e notícias de processos seletivos
@@ -69,48 +104,112 @@
         saepe doloremque est enim velit autem eos dolorem ipsam veritatis
         aliquid, quam sint!
       </h2>
-      <div class="painel">
-        <div class="cartao">
-          <h3 class="manchete">Manchete</h3>
-          <p class="cartao-data">Data</p>
-          <p class="cartao-descricao">resumo...</p>
-          <ul class="painel-interacao">
-            <li><img src="" alt="coração"></li>
-            <li><img src="" alt="curtida"></li>
-            <li><img src="" alt="compartilhar"></li>
-          </ul>
+
+       <!--inicio dos cards-->
+       <div class="row row-cols-1 row-cols-md-3 g-4 mb-1">
+        <!--card1-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/aprender.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Missão</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <ul class="painel-interacao">
+                  <li><img src="" alt="coração"></li>
+                  <li><img src="" alt="curtida"></li>
+                  <li><img src="" alt="compartilhar"></li>
+                </ul>
+              </small>
+            </div>
+          </div>
         </div>
-        <div class="cartao">
-          <h3 class="manchete">Manchete</h3>
-          <p class="cartao-data">Data</p>
-          <p class="cartao-descricao">resumo...</p>
-          <ul class="painel-interacao">
-            <li><img src="" alt="coração"></li>
-            <li><img src="" alt="curtida"></li>
-            <li><img src="" alt="compartilhar"></li>
-          </ul>
+        <!--car2-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/aprender.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Visão</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <ul class="painel-interacao">
+                  <li><img src="" alt="coração"></li>
+                  <li><img src="" alt="curtida"></li>
+                  <li><img src="" alt="compartilhar"></li>
+                </ul>
+              </small>
+            </div>
+          </div>
         </div>
-        <div class="cartao">
-          <h3 class="manchete">Manchete</h3>
-          <p class="cartao-data">Data</p>
-          <p class="cartao-descricao">resumo...</p>
-          <ul class="painel-interacao">
-            <li><img src="" alt="coração"></li>
-            <li><img src="" alt="curtida"></li>
-            <li><img src="" alt="compartilhar"></li>
-          </ul>
-        </div>
-        <div class="cartao">
-          <h3 class="manchete">Manchete</h3>
-          <p class="cartao-data">Data</p>
-          <p class="cartao-descricao">resumo...</p>
-          <ul class="painel-interacao">
-            <li><img src="" alt="coração"></li>
-            <li><img src="" alt="curtida"></li>
-            <li><img src="" alt="compartilhar"></li>
-          </ul>
+        <!--card3-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/aprender.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Valores</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <ul class="painel-interacao">
+                  <li><img src="" alt="coração"></li>
+                  <li><img src="" alt="curtida"></li>
+                  <li><img src="" alt="compartilhar"></li>
+                </ul>
+              </small>
+            </div>
+          </div>
         </div>
       </div>
+      <!--fim dos cards-->
+      <!-- <div class="painel">
+        <div class="cartao">
+          <h3 class="manchete">Manchete</h3>
+          <p class="cartao-data">Data</p>
+          <p class="cartao-descricao">resumo...</p>
+          <ul class="painel-interacao">
+            <li><img src="" alt="coração"></li>
+            <li><img src="" alt="curtida"></li>
+            <li><img src="" alt="compartilhar"></li>
+          </ul>
+        </div>
+        <div class="cartao">
+          <h3 class="manchete">Manchete</h3>
+          <p class="cartao-data">Data</p>
+          <p class="cartao-descricao">resumo...</p>
+          <ul class="painel-interacao">
+            <li><img src="" alt="coração"></li>
+            <li><img src="" alt="curtida"></li>
+            <li><img src="" alt="compartilhar"></li>
+          </ul>
+        </div>
+        <div class="cartao">
+          <h3 class="manchete">Manchete</h3>
+          <p class="cartao-data">Data</p>
+          <p class="cartao-descricao">resumo...</p>
+          <ul class="painel-interacao">
+            <li><img src="" alt="coração"></li>
+            <li><img src="" alt="curtida"></li>
+            <li><img src="" alt="compartilhar"></li>
+          </ul>
+        </div>
+        <div class="cartao">
+          <h3 class="manchete">Manchete</h3>
+          <p class="cartao-data">Data</p>
+          <p class="cartao-descricao">resumo...</p>
+          <ul class="painel-interacao">
+            <li><img src="" alt="coração"></li>
+            <li><img src="" alt="curtida"></li>
+            <li><img src="" alt="compartilhar"></li>
+          </ul>
+        </div>
+      </div> -->
     </main>
   </article>
 
