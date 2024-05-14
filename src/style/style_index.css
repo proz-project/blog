@@ -247,8 +247,7 @@ footer p {
   padding: 20px;
   margin: 24px;
   line-height: 1.6;
-  display: flex;
-  flex-wrap: wrap;
+
   flex: 0 0 66%;
   max-width: 66%;
   max-width: 960px;
@@ -269,9 +268,5 @@ footer p {
 .item {
   list-style-type: disc;
   margin-left: 30px;
-  font-size: 0.8rem;
-  font-weight: 700;
-
-
 
 }
