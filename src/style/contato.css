@@ -1,9 +1,9 @@
 
 .cabecalhohead {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 20px;
     text-align: center;
-}
+} 
 
 .posicao2head {
     text-align: center;
@@ -32,6 +32,7 @@
 
 .campo label {
     margin-bottom: 0, 4em;
+    
 
     display: block;
 }
@@ -44,14 +45,23 @@
     border-right: navajowhite;
     border-bottom: 2px solid;
     font-size: 1.5rem;
+    
+    
 }
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button{
+
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 
 .campo {
     margin: 1em 0;
 }
 
 textarea {
-    width: 100%;
+    width: 102%;
     border: 2px solid;
 }
 
@@ -60,14 +70,15 @@ p small {
 }
 
 .botaohead button {
-    background: #0388a6;
+    background:rgb(255, 255, 255);
     padding: 10px 20px;
-    color: #FFF;
-    border: 2px solid #0388a6;
+    color: rgb(7, 6, 6);
+    border: 2px solid #0a0a0a;
     border-radius: 3px;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-
-  
+.botaohead button:hover{
+    background: #ffc106;
+}
