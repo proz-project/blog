@@ -24,27 +24,52 @@
 </head>
 
 <body>
-  <header class="logo">
-    <img src="./img/5.png" alt="logo-EducaPro" width="20%">
-    <nav>
+
+
+
+    
+  
+
+  <header  class="cabecalho">
+    <div class="logo">
+      <img  src="./img/5.png" alt="logo-EducaPro" width="50%">
+   </div>
+    <nav class="nav__menu">
       <ul>
         <li><a target="_parent" href="./index.html">EducaPro</a></li>
         <li><a target="_parent" href="./post.html">Blog</a></li>
-        <li><a target="_parent" href="./about.html">Quem Somos</a></li>
+        <li><a target="_parent" href="./about.html">Sobre</a></li>
         <li><a target="_parent" href="./contato.html">Contato</a></li>
         <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
         <li><a target="_parent" href="./login.html">Entrar <span class="glyphicon glyphicon-user"></span></a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main__box">
+
+
+    <aside class="libras">
+      <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+              new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+      </div>
+      
+  </aside>
+
   <section class="meiohead">
     <div class="cabecalhohead">
       <h1 id="posicao2head"> Contato </h1>
     </div>
-    <div>
+    <!-- <div>
       <p>Envie comentários, sugestões, dúvidas, ou mesmo uma reclamação</p>
-    </div>
+    </div> -->
+    
 
     <form action="" method="POST" class="formulario" onsubmit="return validarFormulario()">
 
@@ -54,15 +79,21 @@
     
       <div class="campo">
         <label> <strong>*Nome Completo</strong></label>
-        <input type="text" name="nome" id="nome" required>
-        <div id="erroNome" style="color: red;"></div>
+        <input type="text" name="nome" id="nome" required  onblur=" validaNome(this)" >
+        <!-- <div id="erroNome" style="color: red;"></div> -->
       </div>
+      <div class="campo">
+        <p id="error"></p>
+        <label for="cpf"> CPF</label>
+        <input class="form-control" type="number" name="cpf" id="cpf" onblur="validaCPF(this)" placeholder="___-___-___-__" maxlength="11" size="11" required="required">
+    </div>
       <div class="campo">
         <label> <strong>*E-mail</strong> </label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required onblur="validaEmail(this) ">
         <div id="erroEmail" style="color: red;"></div>
       </div>
-      <div class="campo">
+  
+      <!-- <div class="campo">
         <label for="telefone"> <strong>Telefone</strong> </label>
         <input type="tel" id="telefone" required placeholder="(XX) - X XXXX-XXXX">
         <div id="erroTelefone" style="color: red;"></div>
@@ -83,7 +114,7 @@
       <div class="campo">
         <label for="estado"> <strong>Estado</strong></label>
         <input type="text" id="estado">
-      </div>
+      </div> -->
       <div class="campo">
         <label for="mensagens"><strong>Mensagem</strong> </label>
         <textarea name="msg" id="msg" cols="" rows="10" required></textarea>
@@ -98,10 +129,7 @@
     </form>
     
   </section>
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsam voluptatibus i
-    lorem*10000
-  </div>
+  
   </main>
 
   <footer class="logo-footer">
