@@ -208,7 +208,7 @@ footer p {
 }
 
 .privacy-body {
-  padding: 32px 0;
+  padding: 2rem;
 }
 
 .privacy-body .container {
@@ -222,8 +222,8 @@ footer p {
 }
 
 .privacy-body .flex-limit {
-  flex: 0 0 66%;
-  max-width: 66%;
+  flex: 0 0 90% 0;
+  max-width: 100%;
 }
 
 .privacy-body .course {
@@ -246,12 +246,11 @@ footer p {
 .text-box {
   padding: 20px;
   margin: 24px;
-  line-height: 1.6;
 
   flex: 0 0 66%;
-  max-width: 66%;
   max-width: 960px;
   margin: 0 auto;
+
 
 
 }
@@ -261,12 +260,21 @@ footer p {
   font-weight: 700;
   color: #212529;
   margin-bottom: 16px;
+  line-height: 1.6;
 
 }
 
 
+
 .item {
-  list-style-type: disc;
-  margin-left: 30px;
+
+  margin: 1rem;
+  flex-direction: relative;
+  flex-flow: column;
+  justify-content: center;
+  font-weight: 700;
+  color: #080808;
+  font: 1em sans-serif;
+  max-width: 66%;
 
 }
