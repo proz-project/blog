@@ -51,6 +51,12 @@ header {
   padding-bottom: 8px;
 }
 
+h1,
+h2 {
+  padding: 20px;
+  text-align: center;
+}
+
 ul {
   display: flex;
   align-items: center;
@@ -62,7 +68,7 @@ ul {
 nav a {
   text-decoration: none;
   padding: 8px;
-} 
+}
 
 nav ul li {
   list-style: none;
@@ -72,14 +78,13 @@ nav ul li a {
   color: rgb(255, 255, 255);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #ffc106;
-  align-items: center;  
+  align-items: center;
 }
 
-main { 
-
-  background-color: rgb(245, 239, 228);
+main {
+  /* background-color: #ffc106; */
   flex-grow: 1;
   padding: 10px;
   width: auto;
@@ -98,11 +103,11 @@ main {
 
 footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color:black;
-  width: 100%; 
+  background-color: black;
+  width: 100%;
   text-align: center;
   bottom: 0;
 }
@@ -180,6 +185,37 @@ footer p {
   padding: 15px;
 }
 
+.img-div {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-img-div {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.img-head-page {
+  align-items: center;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  max-width: 80%;
+  justify-content: center;
+  display: flex;
+}
+
+.img-head-page img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
 /*Responsividade*/
 
 @media screen and (max-width: 1440px) {
@@ -187,9 +223,81 @@ footer p {
     flex-direction: column;
   }
 
-    nav {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: row;
+  }
 
   
+}
+
+.privacy-body {
+  padding: 2rem;
+}
+
+.privacy-body .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.privacy-body .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.privacy-body .flex-limit {
+  flex: 0 0 90% 0;
+  max-width: 100%;
+}
+
+.privacy-body .course {
+  padding: 48px 0 0 16px;
+  margin-bottom: 32px;
+}
+
+.privacy-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 16px;
+}
+
+.privacy-body p {
+  color: #212529;
+  line-height: 1.6;
+}
+
+.text-box {
+  padding: 20px;
+  margin: 24px;
+
+  flex: 0 0 66%;
+  max-width: 960px;
+  margin: 0 auto;
+
+
+
+}
+
+.text-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 16px;
+  line-height: 1.6;
+
+}
+
+
+
+.item {
+
+  margin: 1rem;
+  flex-direction: relative;
+  flex-flow: column;
+  justify-content: center;
+  font-weight: 700;
+  color: #080808;
+  font: 1em sans-serif;
+  max-width: 66%;
+
 }

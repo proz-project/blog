@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tutorial - Validador Universal de Formulário</title>
+
+<style type="text/css">
+p{font-size:20px; }
+
+li{font-size:20px; text-align:justify;}
+</style>
+</head>
+
+<body>
+<h1 align="center">Tutorial - Validador Universal de Formulário</h1>
+<p align="left">&nbsp;</p>
+<p align="left" class="p"><strong>Objetivo:</strong> Este tutorial tem como objetivo explicar o funcionamento e o uso deste Validador de Formul&aacute;rios Web.</p>
+<p align="left" class="p"><strong>O Validador: </strong>Este validador &eacute; composto de fun&ccedil;&otilde;es que atrav&eacute;s de ER's (Express&otilde;es Regulares) formam um padr&atilde;o para o preenchimento de um formul&aacute;rio. </p>
+<p align="left" class="p">Esta padroniza&ccedil;&atilde;o trar&aacute; benef&iacute;cios tanto para o usu&aacute;rio quanto para o administrador do site:<br />
+</p>
+<ul>
+  <li> o usu&aacute;rio n&atilde;o possuir&aacute; dificuldades para o preenchimento deste pois existem dicas e alertas que o ajudar&atilde;o a completar este rapidamente;</li>
+  <span class="p"><br/>
+  </span>
+  <li>e o programador ter&aacute; a seguran&ccedil;a de que o formul&aacute;rio ser&aacute; totalmente preenchido, e ainda seguindo a forma correta e desejada por ele.</li>
+</ul>
+<p><strong>As fun&ccedil;&otilde;es: </strong>O formul&aacute;rio possui v&aacute;rias fun&ccedil;&otilde;es.Algumas s&atilde;o espec&iacute;ficas de cada campo,  outras possuem determinados objetivos como por exemplo barrar a digita&ccedil;&atilde;o de n&uacute;meros em campos espec&iacute;ficos de letras (ex.: campo de nome), ou evitar que sejam digitadas letras em campos de CPF, Data, RG e CEP. Abaixo est&atilde;o as fun&ccedil;&otilde;es usadas na composi&ccedil;&atilde;o do formul&aacute;rio:</p>
+<ul>
+  <li>function  valida_campoVazio(campo);</li>
+  <li>function campo_radioCheckSelect(campo);</li>
+  <li>function limpaID(ID);</li>
+  <li>function informa(Ncampo);</li>
+  <li>function validar_nome(Ncampo);</li>
+  <li>function validar_CEP(Ncampo);</li>
+  <li>function validar_CPF(Ncampo);</li>
+  <li>function validar_RG(Ncampo);</li>
+  <li>function validar_email(Ncampo);</li>
+  <li>function validar_Data(Ncampo);</li>
+  <li>function valida_numeros(Ncampo);</li>
+</ul>
+<p><strong>Express&otilde;es Regulares: </strong>As Express&otilde;es Regulares s&atilde;o colocadas dentro de uma fun&ccedil;&atilde;o.  Ao final da digita&ccedil;&atilde;o do usu&aacute;rio &eacute; feito uma compara&ccedil;&atilde;o do que ele escreveu com o que a ER  ordena, caso n&atilde;o esteja de acordo o programador poder&aacute; implementar uma dica ou instru&ccedil;&atilde;o de como realizar o preenchimento daquele campo. Express&otilde;es Regulares usadas no formul&aacute;rio:</p>
+
+<strong>CARACTERISTICAS DO VALIDADOR</strong></p>
+  <p align="left">- bloqueia digito de caracteres pr&eacute;-definidos, nos campos
+    numericos como CEP impede o digito de letras e em campos especifico de texto</p>
+  <p align="left"> como nome bloqueia o digito de n&uacute;meros<br>
+    - valida cep de acordo com o estado<br>
+    - valida CPF<br>
+    - valida Data<br>
+    - valida senha com restri&ccedil;&atilde;o minima de 3 caracteres<br>
+    - auto completar nos campos: CEP,CPF,RG,Data<br>
+    - valida campo radio, checkbox no sbmit do formul&aacute;rio</p>
+
+<p><strong>Modo de Usar o Validador: </strong>O usu&aacute;rio</p>
+<p><BR/>
+       EXEMPLO 1:<BR/>
+	    usando o validador em um campo nome.</p>
+    <p><strong>&lt;input type=&quot;text&quot; id=&quot;nome&quot; name=&quot;nome&quot; onKeyPress=&quot;valida_digitos('nome')&quot; onBlur=&quot;valida_campos('nome')&quot;&gt;</strong>
+      <br/>
+    no evento onKeyPress &eacute; chamada a fun&ccedil;&atilde;o <em>valida_digitos()</em> passando como parametro
+    o id do campo. A fun&ccedil;&atilde;o<em> valida_digitos()</em> impede que seja digitado n&uacute;meros
+    no campo, quando o id passado for 'nome' ou qualquer outro configurado no
+    arquivo <em>validador.js</em> </p>
+    <p>no evento onBlur &eacute; chamada a fn&ccedil;&atilde;o valida_campos(), que quando passado
+  como parametro 'nome' ele verifica se tem no m&iacute;nimo 3 caracteres no campo  </div>
+  <p align="left">EXEMPLO 2:
+		 <br/> usando o validador em um campo num&eacute;rico, CEP,CPF,RG,DATA
+<p><strong>&lt;input type=&quot;text&quot; name=&quot;rg&quot; id=&quot;rg&quot; onFocus=&quot;informa('rg')&quot; onKeypress=&quot;valida_digitos('rg')&quot; onKeyDown=&quot;formata('rg')&quot; onBlur=&quot;valida_campos('rg')&quot;&gt;</strong>
+  <br/>
+	  no evento onFocus &eacute; chamada a fun&ccedil;&atilde;o <em>informa() </em>que
+	  exibe uma mensagem com descri&ccedil;&atilde;o de como deve ser preenchido
+	  o campo na div com id='resposta<em>nomedocampo</em>, a mensagem &eacute; de
+	  acordo com o parametro passado. Evento onKeypress &eacute; chamada a fun&ccedil;&atilde;o <em>valida_digitos(),
+	  </em>a fun&ccedil;&atilde;o impede que seja digitado letras no campo quando
+	  o parametro passado for <em>cep,cpf,rg,data</em>. Evento onKeyDown &eacute; chamada
+	  a fun&ccedil;&atilde;o <em>fomata(),</em> a fun&ccedil;&atilde;o da formata&ccedil;&atilde;o
+	  no campo automaticamente de acordo com o parametro passado, no caso do
+	  exemplo cpf
+	  - xxxxxxxx-xx. Evento onBlur &eacute; chamada a fun&ccedil;&atilde;o <em>valida_campos() </em>
+que verifica o n&uacute;mero informado no campo, o numero &eacute; testado se ok ent&atilde;o
+caixa
+de
+texto fica verde e o focus &eacute; liberado para outro campo, se n&atilde;o
+a caixa
+de texto
+fica vermelho e o focus permanece no campo.
+<p><em>OBS.: </em>nos campos cep,cpf,data, o Evento onBlur a fun&ccedil;&atilde;o
+  chamada &eacute;
+  valida_cep() - valida_cpf() - valida_data()<br/>
+  a valida&ccedil;&atilde;o do CEP &eacute; de acordo com o estado selecionado, por isso se for o
+  usar a vlaida&ccedil;&atilde;o de cep deve ter um campo onde seja tb informado o uf ou estado
+<p>EXEMPLO 3:
+<p><strong>&lt;form action=&quot;#&quot; onSubmit=&quot;return valida_enviar(this)&quot;&gt;</strong>
+<BR/>
+ao submeter o formul&aacute;rio &eacute; chamada a fun&ccedil;&atilde;o
+<em>valida_enviar(this), </em>a fun&ccedil;&atilde;o verifica se todos os campos do formul&aacute;rio
+foram preenhidos, se n&atilde;o &eacute; informada na div correspondente a cada campo uma mensagem,
+se sim o formul&aacute;rio &eacute; enviado.
+<p>&nbsp;
+</body>
+</html>
+
+</body>
+</html>
