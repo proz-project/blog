@@ -1,3 +1,8 @@
-.aside{
-   background-color: aliceblue;
+.carrossel-item{
+   width: 90%;
+   height: auto;
+   object-fit: cover;
+   object-position: center;
+   display: flex;
+   border: 1px solid #000;
 }
