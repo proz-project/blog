@@ -1,97 +1,61 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Informações Educacional Profissional Gratuita."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta title="Login - EduPro - Qualificação Profissional" />
+    <meta
+      name="keywords"
+      content="EduPro, Qualificação Profissional, Cursos, Projetos"
+    />
+    <meta name="theme-color" content="rgb(104, 144, 184)" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Informações Educacional Profissional Gratuita." />
-  <meta name="robots" content="index, follow" />
-  <meta title="Login - EduPro - Qualificação Profissional" />
-  <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos" />
-  <meta name="theme-color" content="rgb(104, 144, 184)">
+    <title>Login - EduPro - Qualificação Profissional</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style/style_login.css" />
+    <link rel="icon" href="./img/svg/16x16.svg" sizes="any" />
+    <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-  <title>Login - EduPro - Qualificação Profissional</title>
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_login.css" />
-  <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
-  <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <header class="logo">
-    <img src="./img/5.png" alt="logo-EducaPro" width="20%">
-    <nav>
-      <ul>
-        <li><a target="_parent" href="./index.html">EducaPro</a></li>
-        <li><a target="_parent" href="./post.html">Blog</a></li>
-        <li><a target="_parent" href="./about.html">Quem Somos</a></li>
-        <li><a target="_parent" href="./contato.html">Contato</a></li>
-        <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
-        <li><a target="_parent" href="./login.html">Entrar <span class="glyphicon glyphicon-user"></span></a></li>
-      </ul>
-    </nav>
-  </header>
-    <div class="container">
-      <div class="content first-content">
-        <div class="first-column">
-          <h2 class="title">Bem vindo de volta!</h2>
-          <p class="description">Para se manter conectado conosco</p>
-          <p class="description">por favor faça login com suas informações pessoais</p>
-          <button class="btn">entrar</button>
-        </div>
-        <div class="second-column">
-          <h2 class="title">Criar conta</h2>
-          <div class="social-media">
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Gmail</a></li>
-            </ul>
-          </div><!--SOCIAL MEDIA-->
-          <p class="description">ou use seu e-mail para cadastro</p>         
-          <form >
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="usuario@dominio.com">
-            <input type="password" placeholder="digite sua senha">
-            <button class="btn">Entrar</button>
-          </form>
-        </div><!--FINAL DA SEGUNDA COLUNA-->
-      </div><!--FINAL DO PRIMEIRO CONTEINER-->
-    </div>
-    <div class="content second-content">
-      <div class="first-column">
-        <h2 class="title">HELLO!</h2>
-        <p class="description">Insira seus dados pessoais aqui!</p>
-        <p class="description">e comece a jornada conosco</p>
-        <button class="btn">entrar</button>
-      </div>
-      <div class="second-column">
-        <h2 class="title">Entrar no ambiente</h2>
-        <div class="social-media">
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Gmail</a></li>
-          </ul>
-        </div><!--SOCIAL MEDIA-->
-        <p class="description">ou use sua conta de e-mail</p>         
-        <form >
-          <input type="email" placeholder="usuario@dominio.com">
-          <input type="password" placeholder="digite sua senha">
-          <a href="#">Escqueceu sua senha?</a>
-          <button class="btn">Entrar</button>
-        </form>
-      </div><!--FINAL DA SEGUNDA COLUNA-->
-    </div><!--FINAL DO SEGUNDO CONTEINER-->
-
+  <body>
+    <header class="logo">
+      <img src="./img/5.png" alt="logo-EducaPro" width="20%" />
+      <nav>
+        <ul>
+          <li><a target="_parent" href="./index.html">EducaPro</a></li>
+          <li><a target="_parent" href="./post.html">Blog</a></li>
+          <li><a target="_parent" href="./about.html">Quem Somos</a></li>
+          <li><a target="_parent" href="./contato.html">Contato</a></li>
+          <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
+          <li>
+            <a target="_parent" href="./login.html"
+              >Entrar <span class="glyphicon glyphicon-user"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>ponto de partida</main>
     <footer class="logo-footer">
       <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
-      <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
+      <p>
+        <strong
+          >&copy; 2024 EducaPro - Educação Profissional.<br />Todos os direitos
+          reservados.</strong
+        >
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>

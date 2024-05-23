@@ -1,31 +1,4 @@
-/* FONTES DE TEXTOS de URL */
 
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
-/* .geologica-<uniquifier> {
-  font-family: "Geologica", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0,
-    "SHRP" 0;
-} */
-
-/* FONTES DE TEXTOS BAIXADAS */
-@font-face {
-  font-family: 'KGSecondChancesSketch';
-  src: url("../font/KGSecondChancesSketch.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/* 
-TIPOS DE FORMT()
-opentype (otf)
-truetype(ttf)
-embeddad-opentype
-svg
-*/
 
 /* GLOBAL */
 * {
