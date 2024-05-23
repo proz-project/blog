@@ -1,0 +1,12 @@
+#total {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(img/bg_validador.jpg); MARGIN: auto; WIDTH: 650px; COLOR: #333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 580px
+}
+TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.espaco {
+	PADDING-RIGHT: 30px; TEXT-ALIGN: right
+}
+.titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; TEXT-ALIGN: center
+}
