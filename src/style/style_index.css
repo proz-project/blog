@@ -4,41 +4,43 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2{
+h1,
+h2 {
   padding: 20px;
   text-align: center;
 }
 
 body {
-  
+
   margin: 0;
   padding: 0;
   height: 100vh;
   background-color: #f8f8f8;
 }
+
 /* cursor*/
 .cursor {
-    z-index: 1000;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    right: 10px;
-    border-radius: 50%;
-    bottom: 800px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transition: .5s;
-    line-height: 80px;
-    text-align: center;
-    background-image: url(./imagens/seta-cima.png);
+  z-index: 1000;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  border-radius: 50%;
+  bottom: 800px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  line-height: 80px;
+  text-align: center;
+  background-image: url(./imagens/seta-cima.png);
 }
 
 .cursor.-acitve {
-    bottom: 0;
-    visibility: visible;
-    opacity: 1;
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -227,7 +229,7 @@ footer p {
     flex-direction: row;
   }
 
-  
+
 }
 
 .privacy-body {
@@ -299,5 +301,48 @@ footer p {
   color: #080808;
   font: 1em sans-serif;
   max-width: 66%;
+
+}
+
+.brower-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-blog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-blog {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+}
+
+.blog-princi-title {
+  text-align: center;
+}
+
+.blog-princi-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
 
 }
