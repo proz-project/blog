@@ -69,6 +69,7 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
+/* FORMULÁRIO LOGIN */
 .form_container{
 position: absolute;
 max-width: 320px;
@@ -151,7 +152,7 @@ color: #707070;
 right: 0px;
 font-size: 18px;
 }
-
+/* AREA DE OPÇÕES DO FORMULÁRIO LOGIN  */
 .option_field{
   margin-top: 14px;
   display: flex;
@@ -185,6 +186,22 @@ text-decoration: underline;
   color: #0b0217;
 }
 
+/* BUTÕES DO FORMULÁRIO */
+.form_container button{
+background-color: #ffc106;
+margin-top: 30px;
+width: 100%;
+padding: 10px 0;
+border-radius: 10px;
+}
+.login_sigup{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+/* ------------------------------------- */
 
 /* RODAPÉ */
 footer {
