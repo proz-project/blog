@@ -108,7 +108,7 @@ text-align: center;
 
 .input_box input{
   height: 100%;
-  width: 100%;
+  width: 95%;
   border: none;
   outline: none;
   padding: 0 0 0 20px; /*0 30px*/
@@ -147,10 +147,42 @@ color: #707070;
   color: #ffc106;
 }
 
-
 .input_box i.pw_hide{
 right: 0px;
 font-size: 18px;
+}
+
+.option_field{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_container a{
+  color: #ffc106;
+  font-size: 12px;
+}
+
+.form_container a:hover{
+text-decoration: underline;
+}
+.checkbox{
+  display: flex;
+  column-gap: 8px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.checkbox input{
+  accent-color:#ffc106;
+}
+
+.checkbox label{
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  color: #0b0217;
 }
 
 
