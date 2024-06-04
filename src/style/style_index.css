@@ -4,84 +4,174 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2{
-  padding: 20px;
-  text-align: center;
-}
-
+/* GERAL*/
 body {
-  
-  margin: 0;
-  padding: 0;
   height: 100vh;
-  background-color: #f8f8f8;
-}
-/* cursor*/
-.cursor {
-    z-index: 1000;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    right: 10px;
-    border-radius: 50%;
-    bottom: 800px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transition: .5s;
-    line-height: 80px;
-    text-align: center;
-    background-image: url(./imagens/seta-cima.png);
+  background-color: #303841;
 }
 
-.cursor.-acitve {
-    bottom: 0;
-    visibility: visible;
-    opacity: 1;
+.cabecalho__conteudo{
+  /* max-width: 1400px; */
+  margin: 0 auto;
+
+  
+}
+/* ESTILO CABEÇALHO */
+header{
+  padding: 5px 4%;
+  padding-bottom: 5px;
+  background-color: #303841;
+  
 }
 
-
-header {
-  background-color: black;
-  font-size: 1.4em;
+header > .cabecalho__conteudo{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  text-align: center;
-  padding-bottom: 8px;
-}
+  height:150% ;
 
-h1,
-h2 {
-  padding: 20px;
-  text-align: center;
-}
 
-ul {
-  display: flex;
-  align-items: center;
-  margin-left: 12px;
-  height: 100%;
-  font-weight: bold;
 }
+.logo{
 
-nav a {
+}
+header a {
   text-decoration: none;
-  padding: 8px;
+  color: rgb(180, 178, 178);
+  font-size: 1.5rem;
+  display:inline-block;
+
+}
+header nav.nav__menu a:hover{
+  color: white;
+text-decoration: none;
+  transform: scale(1.20);
+  transition: .2s;
 }
 
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  color: rgb(255, 255, 255);
-}
-
-nav ul li a:hover {
-  color: #ffc106;
+header nav  ul {
+  list-style-type: none;
   align-items: center;
+  /* margin-left: 12px;
+  height: 100%; */
+  font-weight: bold; 
 }
+
+header nav.nav__menu ul li {
+display: inline-block;
+  padding:0 40px;
+
+}
+header .btn-login button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 0;
+  background-color:#ffc106 ;
+  cursor: pointer;
+
+}
+
+header .btn-login button:hover{
+  box-shadow:0px 0px 10px #ffc106 ;
+}
+/* Fim ESTILO CABEÇALHO */
+
+/* inicio menu mobile */
+
+.btn-abrir-menu i{
+  color: #ffc106;
+  font-size: 40px;
+}
+
+.menu-mobile{
+  background-color: #303841;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .3s;
+
+}
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+}
+.menu-mobile .btn-fechar {
+
+  padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar .bi{
+
+  font-size: 30px;
+  color:rgb(238, 255, 0);
+
+}
+
+.menu-mobile nav ul{
+
+  text-align: right;
+}
+
+.menu-mobile nav ul li a{
+  text-decoration: none;
+  color: rgb(180, 178, 178);
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+.menu-mobile nav ul li a:hover{
+  background-color: #ffc106;
+  color:#fff
+
+}
+
+.overlay-menu{
+  background-color:#303841 ;
+  width: 100%;
+  right: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+ display: none;
+}
+
+
+/* fim menu mobile */
+/* inicio cursor de acessibilidade */
+.cursor {
+  z-index: 1000;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  border-radius: 50%;
+  bottom: 800px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  line-height: 80px;
+  text-align: center;
+  background-image: url(./imagens/seta-cima.png);
+}
+.cursor.-acitve {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+/* Fim de cursor acessibilidade */
+
 
 main {
   /* background-color: #ffc106; */
@@ -89,6 +179,10 @@ main {
   padding: 10px;
   width: auto;
   height: auto;
+}
+h1, h2{
+  padding: 20px;
+  text-align: center;
 }
 
 /* aside {
@@ -101,39 +195,94 @@ main {
   
 }  */
 
+
+/* inicio footer*/
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  background-color: black;
+ 
+  background-color: #303841;
   width: 100%;
-  text-align: center;
+
+ 
+  padding: 8px;
+}
+
+footer > .footer_conteudo{ 
+  display: flex;
+  justify-content: space-between;
   bottom: 0;
+  /* flex-direction: column-reverse; */ 
+  }
+
+.footer_conteudo p {
+  font-size: 1.5rem;
+  color: rgb(180, 178, 178);
+  padding: 20px 10px;
+}
+.icon-redesocial{
+  padding-top: 15px;
+
 }
 
-footer p {
-  color: white;
+
+ .icon-redesocial ul {
+display: flex;
+justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+.icon-redesocial ul li{
+  display: inline-block;
+  padding:0 40px;
+}
+footer a{
+  text-decoration: none;
+  color: rgb(180, 178, 178);
+  font-size: 1.5rem;
+  display:inline-block; 
+  
+}
+footer a:hover{
+
+  transform: scale(1.08);
+  transition: 2s;;
 }
 
+.icon-redesocial a:hover{
+}
+.icon_footer img{
+  border-radius: 60px;
+  background-color:#ffc106;
+  height: 50px;
+  width: 50px;
+  padding: 2px 2px;
 
-#logo-principal {
+}
+.icon_footer img:hover{
+  box-shadow:0px 0px 15px #ffc106 ;
+  
+
+}
+/* fim footer */
+
+
+/* #logo-principal {
   width: 150px;
   text-align: center;
-}
+} */
 
-#login {
+/* #login {
   margin: auto;
   width: auto;
   height: 100vh;
-}
+  ba
+} */
 
-.logo {
+/* .logo {
   padding-top: 8px;
   display: flex;
   justify-content: center;
-}
-
+} */
+/* seçao main*/
 .banner {
   background-color: rgb(209, 194, 107);
   text-align: center;
@@ -173,17 +322,17 @@ footer p {
   flex-direction: row;
 }
 
-.cabecalho-conteiner {
+/* .cabecalho-conteiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 
-.link-cabecalho {
+/* .link-cabecalho {
   text-decoration: none;
   padding: 15px;
-}
+} */
 
 .img-div {
   display: relative;
@@ -199,7 +348,7 @@ footer p {
 
 }
 
-.img-head-page {
+/* .img-head-page {
   align-items: center;
   border-radius: 15px;
   margin: auto;
@@ -207,32 +356,27 @@ footer p {
   max-width: 80%;
   justify-content: center;
   display: flex;
-}
+} */
 
-.img-head-page img {
+/* .img-head-page img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-}
+} */
 
 
-/*Responsividade*/
 
-@media screen and (max-width: 1440px) {
-  .cabecalho-conteiner {
-    flex-direction: column;
-  }
 
-  nav {
-    flex-direction: row;
-  }
+
 
   
-}
+
 
 .privacy-body {
   padding: 2rem;
 }
+
+/* header */
 
 .privacy-body .container {
   max-width: 960px;
@@ -273,9 +417,9 @@ footer p {
   flex: 0 0 66%;
   max-width: 960px;
   margin: 0 auto;
-
-
-
+  
+  
+  
 }
 
 .text-box h4 {
@@ -284,13 +428,11 @@ footer p {
   color: #212529;
   margin-bottom: 16px;
   line-height: 1.6;
-
+  
 }
 
-
-
 .item {
-
+  
   margin: 1rem;
   flex-direction: relative;
   flex-flow: column;
@@ -299,5 +441,62 @@ footer p {
   color: #080808;
   font: 1em sans-serif;
   max-width: 66%;
+  
+}
+
+/*Responsividade*/
+@media screen and  (max-width: 1020px){
+
+
+   /* nav-menu */
+
+   .nav__menu,     .btn-login{
+    /* o menu desaspareci */
+    display: none;
+
+    }
+ .footer_conteudo{
+      flex-direction: column-reverse;
+    }
+    .icon-redesocial ul li{
+      display: inline-block;
+      margin: 0 auto;
+      /* grid-template-rows: 10px; */
+
+    }
+
+     
+
+  /* .cabecalho{
+    flex-direction: column;
+  } */
+
+  /* nav {
+    flex-direction: row;
+    font-size: 1.rem;
+  } */
+
+  
+}
+
+@media screen and (max-width: 300px) {
+  .nav__menu,     .btn-login{
+    /* o menu desaspareci */
+    display: none;
+
+    }
+ .footer_conteudo{
+      flex-direction: column-reverse;
+    }
 
 }
+
+@media screen and (min-width: 1040px){
+  .menu-mobile{
+
+    overflow: hidden;
+
+  
+  }
+}
+

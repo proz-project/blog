@@ -18,3 +18,5 @@ $(document).ready(function() {
         })
         // END SCROLL EFFECT
 });
+
+// by Mirian Menezes

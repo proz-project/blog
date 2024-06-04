@@ -10,19 +10,25 @@
   <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos" />
   <meta name="theme-color" content="rgb(104, 144, 184)">
 
-
+  <!-- icon -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- fim icon -->
   <link rel="manifest" href="./manifest.json" />
   <link rel="stylesheet" href="./style/style_index.css" />
   <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
   <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ <script src="menu.js" defer></script>
+ <script src="script.js" defer></script>
 
-
-    <title>Home</title>
+  <title>Home</title>
 </head>
 
 <body>
@@ -30,51 +36,104 @@
 
   <div class="cursor"></div>
 
-  
-  <header  class="cabecalho">
-    <div class="logo">
-      <img  src="./img/5.png" alt="logo-EducaPro" width="50%">
-   </div>
-    <nav class="nav__menu">
-      <ul>
-        <li><a target="_parent" href="./index.html">Home</a></li>
-        <li><a target="_parent" href="./post.html">Blog</a></li>
-        <li><a target="_parent" href="./about.html">Sobre</a></li>
-        <li><a target="_parent" href="./contato.html">Contato</a></li>
-        <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
-        <li><a target="_parent" href="./login.html">Login <span class="glyphicon glyphicon-user"></span></a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-  
-  <article>
-    <section class="banner">
-      <div class="banner-caixa-texto">
-        <h1 class="banner-title">
-          Seja bem vindo ao nosso blog de qualificação profissional,
-        </h1><br>
 
-        <img src="img/pagina_em_construção.png" width="400px" alt="página em construção" />
+  <header>
+    <div class="cabecalho__conteudo">
 
-        <h3 class="banner-subtitulo">
-          É um website para ajudar jovens e adolescentes de Vila Isabel-Rj ou de
-          outras regiões, em situações de vulnerabilidade, ao acesso de
-          informação de projetos sociais ofertadas pela Instituição INATOS na
-          formação de cursos de qualificação profissional que colabora na sua
-          inserção para o mercado de trabalho, aumentando suas chances de
-          conseguir ser aprovado em processos seletivos
-        </h3><br>
-
-        <p class="banner-descricao">
-          Funciona como um portal de educação e notícias de processos seletivos
-          , seja de oferta de cursos, bolsas de estudos ou projetos sociais com
-          programas de educação e cultura que esteja aberta para inscrições.
-        </p><br>
-
+      <div class="logo">
+        <a href="#">
+          <img src="./img/6-removebg-preview.png" alt="logo-EducaPro" width="150px" height="150px">
+        </a>
       </div>
-    </section>
+      <nav class="nav__menu">
+        <ul>
+          <li><a target="_parent" href="./index.html">Home</a></li>
+          <li><a target="_parent" href="./post.html">Blog</a></li>
+          <li><a target="_parent" href="./about.html">Sobre</a></li>
+          <li><a target="_parent" href="./contato.html">Contato</a></li>
+          <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+
+          </li>
+        </ul>
+      </nav>
+      <!--  botao login -->
+      <div class="btn-login">
+        <a href="./login.html">
+          <button>login</button>
+        </a> <!--Fim login  -->
+      </div>
+      <div class="btn-abrir-menu " id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+           <div class="btn-fechar">
+            <i class="bi bi-x-lg" ></i>
+            
+          </div>
+           <nav>
+            <ul>
+              <li><a target="_parent" href="./index.html">Home</a></li>
+              <li><a target="_parent" href="./post.html">Blog</a></li>
+              <li><a target="_parent" href="./about.html">Sobre</a></li>
+              <li><a target="_parent" href="./contato.html">Contato</a></li>
+              <li><a target="_parent" href="./login.html">login</a></li>
+              <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+    
+              </li>
+            </ul>
+          
+        </div> <!-- FIM menu-mobile -->
+        <!-- <div class="overlay-menu" id="overlay-menu"></div> -->
+
+    </div> <!-- </div> interface -->
+      
+  </header>
+
+
+  <main>
+
+
+    <aside class="libras">
+      <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+              new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+      </div>
+  </aside>
+
+
+    <article>
+      <section class="banner">
+        <div class="banner-caixa-texto">
+          <h1 class="banner-title">
+            Seja bem vindo ao nosso blog de qualificação profissional,
+          </h1><br>
+
+          <img src="img/pagina_em_construção.png" width="400px" alt="página em construção" />
+
+          <h3 class="banner-subtitulo">
+            É um website para ajudar jovens e adolescentes de Vila Isabel-Rj ou de
+            outras regiões, em situações de vulnerabilidade, ao acesso de
+            informação de projetos sociais ofertadas pela Instituição INATOS na
+            formação de cursos de qualificação profissional que colabora na sua
+            inserção para o mercado de trabalho, aumentando suas chances de
+            conseguir ser aprovado em processos seletivos
+          </h3><br>
+
+          <p class="banner-descricao">
+            Funciona como um portal de educação e notícias de processos seletivos
+            , seja de oferta de cursos, bolsas de estudos ou projetos sociais com
+            programas de educação e cultura que esteja aberta para inscrições.
+          </p><br>
+
+        </div>
+      </section>
 
 
 
@@ -130,15 +189,52 @@
     </article>
   </main>
 
-  <footer class="logo-footer">
-    <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
-    <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
+  <footer>
+    <section class="footer_conteudo">
+      <div>
+        <p><strong>&copy; 2024 EducaPro - Educação Profissional. Todos os direitos reservados </strong></p>
+      </div>
+      <div class="icon-redesocial">
+        <ul>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-twitterx-50.png" alt="twitterx">
+              </i>
+            </a>
+
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-facebook-50.png" alt="facebook">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-instagram-50.png" alt="instagram">
+              </i>
+            </a>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+    </section>
   </footer>
 
   <!-- JQuery and javascript-->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+ 
 
 
 </body>

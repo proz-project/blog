@@ -20,33 +20,70 @@
   <meta title="Sobre nós - EduPro - Qualificação Profissional" />
   <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos" />
   <meta name="theme-color" content="rgb(104, 144, 184)">
+ <!--  script do menu -->
+ <script src="menu.js" defer></script>
 
-
-
-  <title>Quem somos</title>
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_index.css" />
-  <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
-  <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
+ <link rel="manifest" href="./manifest.json" />
+ <link rel="stylesheet" href="./style/style_index.css" />
+ <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
+ <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
+ <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
+ 
+ <title>Quem somos</title>
 </head>
 
 <body>
-  <header  class="cabecalho">
-    <div class="logo">
-      <img  src="./img/5.png" alt="logo-EducaPro" width="50%">
-   </div>
-    <nav class="nav__menu">
-      <ul>
-        <li><a target="_parent" href="./index.html">Home</a></li>
-        <li><a target="_parent" href="./post.html">Blog</a></li>
-        <li><a target="_parent" href="./about.html">Sobre</a></li>
-        <li><a target="_parent" href="./contato.html">Contato</a></li>
-        <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
-        <li><a target="_parent" href="./login.html">Entrar <span class="glyphicon glyphicon-user"></span></a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="cabecalho__conteudo">
 
+      <div class="logo">
+        <a href="#">
+          <img src="./img/6-removebg-preview.png" alt="logo-EducaPro" width="150px" height="150px">
+        </a>
+      </div>
+      <nav class="nav__menu">
+        <ul>
+          <li><a target="_parent" href="./index.html">Home</a></li>
+          <li><a target="_parent" href="./post.html">Blog</a></li>
+          <li><a target="_parent" href="./about.html">Sobre</a></li>
+          <li><a target="_parent" href="./contato.html">Contato</a></li>
+          <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+
+          </li>
+        </ul>
+      </nav>
+      <!--  botao login -->
+      <div class="btn-login">
+        <a href="./login.html">
+          <button>login</button>
+        </a> <!--Fim login  -->
+      </div>
+      <div class="btn-abrir-menu " id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+           <div class="btn-fechar">
+            <i class="bi bi-x-lg" ></i>
+            
+          </div>
+           <nav>
+            <ul>
+              <li><a target="_parent" href="./index.html">Home</a></li>
+              <li><a target="_parent" href="./post.html">Blog</a></li>
+              <li><a target="_parent" href="./about.html">Sobre</a></li>
+              <li><a target="_parent" href="./contato.html">Contato</a></li>
+              <li><a target="_parent" href="./login.html">login</a></li>
+              <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+    
+              </li>
+            </ul>
+          
+        </div> <!-- FIM menu-mobile -->
+        <!-- <div class="overlay-menu" id="overlay-menu"></div> -->
+
+    </div> <!-- </div> interface -->
+      
   </header>
   <main>
     <section class="banner">
@@ -195,9 +232,42 @@
   </main>
 
   </div>
-  <footer class="logo-footer">
-    <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
-    <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
+  <footer>
+    <section class="footer_conteudo">
+      <div>
+        <p><strong>&copy; 2024 EducaPro - Educação Profissional. Todos os direitos reservados </strong></p>
+      </div>
+      <div class="icon-redesocial">
+        <ul>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-twitterx-50.png" alt="twitterx">
+              </i>
+            </a>
+
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-facebook-50.png" alt="facebook">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-instagram-50.png" alt="instagram">
+              </i>
+            </a>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+    </section>
   </footer>
 </body>
 
