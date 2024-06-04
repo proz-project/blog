@@ -63,6 +63,7 @@ main {
 }
 
 #login {
+  position: relative;
   margin: auto;
   width: auto;
   height: 100vh;
@@ -168,6 +169,8 @@ font-size: 18px;
 .form_container a:hover{
 text-decoration: underline;
 }
+
+
 .checkbox{
   display: flex;
   column-gap: 8px;
@@ -199,8 +202,20 @@ border-radius: 10px;
   text-align: center;
   margin-top: 15px;
 }
+/* FORMULÁRIO DE CADASTRO */
 
+.signup_form {
+  display: none;
+}
 
+.form_container.active .signup_form{
+  display: block;
+
+}
+.form_container.active .login_form{
+  display: none;
+
+}
 /* ------------------------------------- */
 
 /* RODAPÉ */

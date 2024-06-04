@@ -70,7 +70,6 @@
 
       <div id="login">
         <div class="form_container">
-          <i class="uil uil-times form_close"></i>
           <div class="form login_form">
             <form action="#">
               <h2 class="login-l1">login</h2>
@@ -97,7 +96,41 @@
               </div>
               <button class="button">Conecte-se agora</button>
               <div class="login_sigup">
-                Já tem uma conta <a href="signup#" id="">seguir</a>
+                Não tem uma conta? <a href="#" id="signup">inscrever-se
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- PARTE DO CADASTRO NOVO -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2 class="login-l1">Cadastre-se
+              </h2>
+              <div class="input_box">
+                <input type="email" placeholder="digite seu email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="Criar senha"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="confirmar senha"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button class="button">Conecte-se agora</button>
+              <div class="login_sigup">
+                Já tem uma conta? <a href="#" id="login">login</a>
               </div>
             </form>
           </div>
@@ -114,5 +147,6 @@
         >
       </p>
     </footer>
+    <script src="./login.js"></script>
   </body>
 </html>
