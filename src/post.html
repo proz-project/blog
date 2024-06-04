@@ -12,33 +12,72 @@
 
 
 
-    <title>Título do Post - EduPro - Qualificação Profissional</title>
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
     <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
     <link rel="stylesheet" href="./style/style_index.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="menu.js" defer></script>
+    <title>Título do Post - EduPro - Qualificação Profissional</title>
 </head>
 
 <body>
-    <header  class="cabecalho">
-        <div class="logo">
-          <img  src="./img/5.png" alt="logo-EducaPro" width="50%">
-       </div>
-        <nav class="nav__menu">
-          <ul>
-            <li><a target="_parent" href="./index.html">Home</a></li>
-            <li><a target="_parent" href="./post.html">Blog</a></li>
-            <li><a target="_parent" href="./about.html">Sobre</a></li>
-            <li><a target="_parent" href="./contato.html">Contato</a></li>
-            <li><a target="_parent" href="./privacy.html">Privacidade</a></li>
-            <li><a target="_parent" href="./login.html">Login <span class="glyphicon glyphicon-user"></span></a></li>
-          </ul>
-        </nav>
+    <header>
+        <div class="cabecalho__conteudo">
+    
+          <div class="logo">
+            <a href="#">
+              <img src="./img/6-removebg-preview.png" alt="logo-EducaPro" width="150px" height="150px">
+            </a>
+          </div>
+          <nav class="nav__menu">
+            <ul>
+              <li><a target="_parent" href="./index.html">Home</a></li>
+              <li><a target="_parent" href="./post.html">Blog</a></li>
+              <li><a target="_parent" href="./about.html">Sobre</a></li>
+              <li><a target="_parent" href="./contato.html">Contato</a></li>
+              <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+    
+              </li>
+            </ul>
+          </nav>
+          <!--  botao login -->
+          <div class="btn-login">
+            <a href="./login.html">
+              <button>login</button>
+            </a> <!--Fim login  -->
+          </div>
+          <div class="btn-abrir-menu " id="btn-menu">
+            <i class="bi bi-list"></i>
+          </div>
+    
+          <div class="menu-mobile" id="menu-mobile">
+               <div class="btn-fechar">
+                <i class="bi bi-x-lg" ></i>
+                
+              </div>
+               <nav>
+                <ul>
+                  <li><a target="_parent" href="./index.html">Home</a></li>
+                  <li><a target="_parent" href="./post.html">Blog</a></li>
+                  <li><a target="_parent" href="./about.html">Sobre</a></li>
+                  <li><a target="_parent" href="./contato.html">Contato</a></li>
+                  <li><a target="_parent" href="./login.html">login</a></li>
+                  <!-- <li><a target="_parent" href="./privacy.html">Privacidade</a></li> -->
+        
+                  </li>
+                </ul>
+              
+            </div> <!-- FIM menu-mobile -->
+            <!-- <div class="overlay-menu" id="overlay-menu"></div> -->
+    
+        </div> <!-- </div> interface -->
+          
       </header>
+
   <main>
             <section>
             <aside>
@@ -85,11 +124,52 @@
           
         </section>
   </main>
-        <footer class="logo-footer">
 
-            <img src="./img/3.png" alt="logo-ChapeuDeFormatura" width="10%" />
-            <p><strong>&copy; 2024 EducaPro - Educação Profissional.<br>Todos os direitos reservados.</p></strong>
-        </footer>
+  <footer>
+    <section class="footer_conteudo">
+      <div>
+        <p><strong>&copy; 2024 EducaPro - Educação Profissional. Todos os direitos reservados </strong></p>
+      </div>
+      <div class="icon-redesocial">
+        <ul>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-twitterx-50.png" alt="twitterx">
+              </i>
+            </a>
+
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-facebook-50.png" alt="facebook">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="icon_footer">
+                <img src="./img/icons8-instagram-50.png" alt="instagram">
+              </i>
+            </a>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+    </section>
+  </footer>
+
+    <!-- JQuery and javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
 </body>
 
 
