@@ -163,7 +163,7 @@ header .btn-login button:hover{
   transition: .5s;
   line-height: 80px;
   text-align: center;
-  background-image: url(./imagens/seta-cima.png);
+  background-image: url(../img/seta-cima.png);
 }
 .cursor.-acitve {
   bottom: 0;
@@ -445,7 +445,7 @@ footer a:hover{
 }
 
 /*Responsividade*/
-@media screen and  (max-width: 1020px){
+@media screen  and (max-width: 1020px){
 
 
    /* nav-menu */
@@ -463,6 +463,9 @@ footer a:hover{
       margin: 0 auto;
       /* grid-template-rows: 10px; */
 
+    }
+    .footer_conteudo> p{
+      margin: 0 auto;
     }
 
      
@@ -491,10 +494,10 @@ footer a:hover{
 
 }
 
-@media screen and (min-width: 1040px){
-  .menu-mobile{
-
-    overflow: hidden;
+@media screen and (min-width: 1020px){
+  .menu-mobile, .btn-abrir-menu{
+ 
+    display: none;
 
   
   }
