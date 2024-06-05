@@ -78,6 +78,12 @@ header .btn-login button:hover{
 }
 /* Fim ESTILO CABEÇALHO */
 
+/*  Libras */
+ .libras{
+  padding-top: px;
+ }
+/* Fim libras */
+
 /* inicio menu mobile */
 
 .btn-abrir-menu i{
@@ -111,7 +117,7 @@ header .btn-login button:hover{
 .menu-mobile .btn-fechar .bi{
 
   font-size: 30px;
-  color:rgb(238, 255, 0);
+  color:#ffc106;
 
 }
 
@@ -125,7 +131,7 @@ header .btn-login button:hover{
   color: rgb(180, 178, 178);
   font-size: 2.5rem;
   font-weight: 300;
-  padding: 20px 8%;
+  padding: 15px 8%;
   display: block;
 }
 .menu-mobile nav ul li a:hover{
@@ -247,8 +253,8 @@ footer a:hover{
   transition: 2s;;
 }
 
-.icon-redesocial a:hover{
-}
+/* .icon-redesocial a:hover{
+} */
 .icon_footer img{
   border-radius: 60px;
   background-color:#ffc106;
