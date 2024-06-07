@@ -5,8 +5,8 @@
   letter-spacing: 1px;
 }
 
-h1, h2{
-  padding: 20px;
+h1,
+h2 {
   text-align: center;
   color: hsl(0, 0%, 0%)
 }
@@ -14,6 +14,7 @@ h1, h2{
 article p {
   font-size: 1.5em;
   color: black;
+  padding: 0 20px 0 20px;
 }
 
 body {
@@ -29,22 +30,21 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-bottom: 8px;
 }
 
 ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+
   height: 100%;
   font-weight: bold;
 }
 
 nav a {
   text-decoration: none;
-  padding: 8px;
-} 
+  padding: 16px;
+}
 
 nav ul li {
   list-style: none;
@@ -54,39 +54,91 @@ nav ul li a {
   color: rgb(255, 255, 255);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #ffc106;
-  align-items: center;  
+  align-items: center;
 }
 
-main { 
+.botao {
+  background-color: #ffc106;
+  border-radius: 5px;
+  color: #000;
+  margin-right: 10px;
+  margin-left: 100px;
+}
+
+div .botao {
+  width: 267px;
+}
+
+.botao a {
+  color: #000;
+  font-size: 1.4em;
+}
+
+.botao a:hover {
+  color: #fff;
+}
+
+main {
   background-color: #000;
-  padding: 10px;
   width: auto;
   height: auto;
 }
 
-main h2{
-  color: white;
-}
 
 aside {
   background-color: rgba(239, 212, 212, 0.74);
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
   width: 30%;
   height: 100%;
-  
-} 
+
+}
+
+.icon-redesocial {
+  position: relative;
+}
+
+
+.icon-redesocial ul {
+  display:flex;
+  flex-direction:row;
+  position: relative;
+  list-style: none;
+  align-items: right;
+}
+
+.icon-redesocial ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.subTitle-white {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 0 20px 20px 20px;
+}
+
+.card-body {
+  height: auto;
+}
+
+.btn-card {
+  background: #ffc106;
+  color: #000;
+}
 
 footer {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color:black;
-  width: 100%; 
+  background-color: black;
+  width: 100%;
   text-align: center;
 }
 
@@ -106,20 +158,24 @@ footer p {
   height: 100vh;
 }
 
-
 .logo {
-  padding-top: 8px;
+  width: auto;
+  padding: 8px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .banner {
   background-color: rgb(209, 194, 107);
   text-align: center;
+  padding-top: 20px;
 }
 
-.banner-title{
+.banner-title {
   color: black;
+  padding: none;
+  margin: none;
 }
 
 .container {
@@ -176,9 +232,9 @@ footer p {
     flex-direction: column;
   }
 
-    nav {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column;
+  }
 
   footer {
     /* flex-direction: column; */
