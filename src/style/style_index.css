@@ -5,8 +5,7 @@
   letter-spacing: 1px;
 }
 
-h1,
-h2 {
+h1,h2,h3 {
   text-align: center;
   color: hsl(0, 0%, 0%)
 }
