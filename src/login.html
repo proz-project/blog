@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Informações Educacional Profissional Gratuita." />
+    <meta name="robots" content="index, follow" />
+    <meta title="EduPro - Qualificação Profissional" />
+    <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos" />
+    <meta name="theme-color" content="rgb(104, 144, 184)">
+  
+    <!-- icon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- fim icon -->
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style/style_index.css" />
+    <link rel="stylesheet" href="./style/style_login.css">
+    <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
+    <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Informações Educacional Profissional Gratuita." />
-  <meta name="robots" content="index, follow" />
-  <meta title="Login - EduPro - Qualificação Profissional" />
-  <meta name="keywords" content="EduPro, Qualificação Profissional, Cursos, Projetos" />
-  <meta name="theme-color" content="rgb(104, 144, 184)">
-
-
-  <title>Login - EduPro - Qualificação Profissional</title>
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="./style/style_index.css" />
-  <link rel="icon" href="./img/svg/16x16.svg" sizes="any">
-  <link rel="icon" href="./img/svg/16x16.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./src/img/svg/16x16.svg">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
-</head>
-
+   <script src="menu.js" defer></script>
+   <script src="script.js" defer></script>
+  
+    <title>Login</title>
+  </head>
 <body>
   <header>
     <div class="cabecalho__conteudo">
@@ -93,26 +105,75 @@
     
 </aside>
 
-  <div id="login">
-    <fieldset>
-      <div class form action="./login.js" method="post">
-        <form>
-          <h2>Login</h2>
-          <label for="email"> Email: </label>
-          <input type="email" id="email" name="email" required>
-          <label for="password"> Senha: </label>"
-          <input type="password" id="passaword" name="password" required>
-          <button type="submit">Entrar</button>
-          <button type="Reset">Limpar</button>
-        </form>
+      <div id="login">
+        <div class="form_container">
+          <div class="form login_form">
+            <form action="#">
+              <h2 class="login-l1">login</h2>
+              <div class="input_box">
+                <input type="email" placeholder="digite seu email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="digite sua senha"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Lembre de mim</label>
+                </span>
+                <a href="#" class="forgot_pw">Esqueceu a senha</a>
+              </div>
+              <button class="button">Conecte-se agora</button>
+              <div class="login_sigup">
+                Não tem uma conta? <a href="#" id="signup">inscrever-se
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- PARTE DO CADASTRO NOVO -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2 class="login-l1">Cadastre-se
+              </h2>
+              <div class="input_box">
+                <input type="email" placeholder="digite seu email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="Criar senha"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input
+                  type="password"
+                  placeholder="confirmar senha"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <button class="button">Conecte-se agora</button>
+              <div class="login_sigup">
+                Já tem uma conta? <a href="#" id="login">login</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </fieldset>
-
-
-
-
-  </div>
-  </main>
+    </main>
 
   <footer>
     <section class="footer_conteudo">
@@ -151,6 +212,7 @@
 
     </section>
   </footer>
+  <script src="./login.js"></script>
 </body>
 
 </html>
