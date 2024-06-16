@@ -4,15 +4,18 @@ const formContainer = document.querySelector(".form_container");
 const formCloseBtn = document.querySelector(".form_close");
 const signupBtn = document.querySelector("#signup");
 const loginBtn = document.querySelector("#login");
-const pwSchowhide = document.querySelector(".pw_hide");
+const pwSchowhide = document.querySelectorAll(".pw_hide");
 
+pwSchowhide.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    let gettPwInput = icon.parentElement.querySelector("input");
+    if (gettPwInput.type === "password") {
+      gettPwInput.type = "text";
+      icon.classList.replace("uil-eye-slash", "uil-eye")
+    }else{
+      gettPwInput.type = "password";
+      icon.classList.replace("uil-eye-", "uil-eye-slash")
 
-signupBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  formContainer.classList.add("active");
-});
-
-loginBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  formContainer.classList.remove("active");
+    }
+  });
 });
