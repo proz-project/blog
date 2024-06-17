@@ -109,32 +109,39 @@
         <div class="form_container">
           <!-- PARTE DO CADASTRO NOVO -->
           <div class="form signup_form">
-            <form action="#">
+            <form  id="form" action="#">
               <h2 class="login-l1">Cadastre-se
               </h2>
               <div class="input_box">
-                <input type="email" placeholder="digite seu email" required />
+                <input id="email" type="email" placeholder="digite seu email" required class="required"/>
                 <i class="uil uil-envelope-alt email"></i>
               </div>
+              <small id="textEmail" class="small-required"></small>
               <div class="input_box">
                 <input
+                id="password"
                   type="password"
                   placeholder="Criar senha"
                   required
-                />
+                class="required"/>
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>
+              <small id="textPassword" class="small-required"></small>
               <div class="input_box">
                 <input
+                id="password-test"
                   type="password"
                   placeholder="confirmar senha"
                   required
-                />
+                oninput="CompararValores()"
+                  class="required"/>
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>
+              <small id="textpassword-test" class="small-required"></small>
               <button class="button">Conecte-se agora</button>
+              <small id="textForm"></small>
               <div class="login_sigup">
                 Já tem uma conta? <a href="./login.html" id="login">login</a>
               </div>

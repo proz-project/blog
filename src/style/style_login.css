@@ -171,5 +171,10 @@ transition:all 0.4s ease-out; */
   text-align: center;
   margin-top: 15px;
 }
+
+
+small{
+  color:#e63636;
+  }
 /* FORMULÁRIO DE CADASTRO */
 /* ------------------------------------- */
