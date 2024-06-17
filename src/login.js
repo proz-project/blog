@@ -29,8 +29,8 @@ form.addEventListener("submit", (e) => {
   if (email.value == " " && password.value == "") {
     textForm.textContent = "Você precisa preencher todos os campos";
   } else if (
-    validadorEmail(email.value) === true &&
-    validadorPassword(password.value) === true
+    (validadorEmail(email.value) === true &&
+    validadorPassword(password.value) === true)
   ) {
     console.log(email.value);
     console.log(password.value);
@@ -38,6 +38,7 @@ form.addEventListener("submit", (e) => {
     textEmail.textContent = " ";
     textpassword.textContent = " ";
     textpasswordTeste.textContent = " ";
+    alert("Cadastro com sucesso!")
   } else {
     console.log("Requisição não atendida");
   }
@@ -87,9 +88,11 @@ function CompararValores() {
   if (passwordTeste.value.length < 6) {
     setError(2);
     textpasswordTeste.textContent =
-    "Senha incorreta.";
+    "Senha abaixo do limite de caracteres que é 6.";
   } else {
     removeError(2);
+    textpasswordTeste.textContent =
+    "";
     comparar();
   }
 }
@@ -99,9 +102,8 @@ function comparar() {
   if (campos[1].value === campos[2].value && campos[2].value.length >= 6) {
     removeError(2);
   } else {
+    mensagemErro();
     setError(2);
-    textpasswordTeste.textContent =
-    "Senha incorreta.";
   }
 }
 
@@ -112,4 +114,9 @@ function setError(index) {
 
 function removeError(index) {
   campos[index].style.border = "";
+}
+
+function mensagemErro(){
+  textpasswordTeste.textContent =
+    "Senha incorreta.";
 }
