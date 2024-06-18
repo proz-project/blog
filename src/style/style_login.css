@@ -1,10 +1,11 @@
-
 /* importação */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 /* PARTE DO LOGIN */
 main {
+
   background-color: #f2f2f2;
+
   flex-grow: 1;
   padding: 10px;
   width: auto;
@@ -20,118 +21,138 @@ main {
 }
 
 /* FORMULÁRIO LOGIN */
-.form_container{
-position: absolute;
-max-width: 320px;
-width: 100%;
-top: 50%;
-left: 50%;
-transform:  translate(-50%, -50%);
-z-index: 101;
-background-color: white;
-padding: 25px;
-border-radius: 12px;
-box-shadow: rgba(0, 0, 0, 0.1);
+.form_container {
+  position: absolute;
+  max-width: 320px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+
+  z-index: 101;
+  background-color: cornsilk;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  /* opacity: 0; */
+  /* pointer-events: none;
+transition:all 0.4s ease-out; */
+}
+/* .home.show .form_container{
+  opacity: 1;
+  pointer-events: none;
+  transform:  translate(-50%, -50%) scale(1.2);
+  
+  } */
+/* .signup_form {
+  display: none;
 }
 
-.form_close{
+.form_container.active .signup_form {
+  display: block;
+}
+
+.form_container.active .login_form {
+  display: none;
+} */
+
+/* .form_close {
   position: absolute;
   top: 10px;
   right: 20px;
   color: #0b0217;
+  font-size: 22px;
   opacity: 0.7;
   cursor: pointer;
+} */
+.form_container h2 {
+  font-size: 22px;
+  color: #0b0217;
+  text-align: center;
 }
 
-.form_container h2{
-font-size: 22px;
-color: #0b0217;
-text-align: center;
-
-}
-
-.input_box{
+.input_box {
   position: relative;
   margin-top: 30px;
   width: 100%;
   height: 40px;
 }
 
-.input_box input{
+.input_box input {
   height: 100%;
-  width: 95%;
+  width: 100%;
   border: none;
   outline: none;
-  padding: 0 0 0 20px; /*0 30px*/
+  padding: 0 30px; /*0 30px*/
   color: #333;
   transition: all 0.2s ease;
   border-bottom: 1.5px solid #aaaaaa;
 }
 
-.input_box input:focus{
+.input_box input:focus {
   border-color: #ffc106;
 }
 
-.input_box i{
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-font-size: 20px;
-color: #707070;
+.input_box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
 }
 
-.input_box i.email{
-left: 0px;
-color: #707070;
-}
-
-.input_box input:focus ~ i.email{
-  color: #ffc106;
-}
-
-.input_box i.password{
+.input_box i.email {
   left: 0px;
-  
+  color: #707070;
 }
 
-.input_box input:focus ~ i.password{
+.input_box input:focus ~ i.email {
   color: #ffc106;
 }
 
-.input_box i.pw_hide{
-right: 0px;
-font-size: 18px;
+.input_box i.password {
+  left: 0px;
+}
+
+.input_box input:focus ~ i.password {
+  color: #ffc106;
+}
+
+.input_box i.pw_hide {
+  right: 0px;
+  font-size: 18px;
+  cursor: pointer;
 }
 /* AREA DE OPÇÕES DO FORMULÁRIO LOGIN  */
-.option_field{
+.option_field {
   margin-top: 14px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.form_container a{
+.form_container a {
   color: #ffc106;
   font-size: 12px;
 }
 
-.form_container a:hover{
-text-decoration: underline;
+.form_container a:hover {
+  text-decoration: underline;
 }
 
-
-.checkbox{
+.checkbox {
   display: flex;
   column-gap: 8px;
   white-space: nowrap;
   font-size: 12px;
 }
 
-.checkbox input{
-  accent-color:#ffc106;
+.checkbox input {
+  accent-color: #ffc106;
 }
 
-.checkbox label{
+.checkbox label {
   font-size: 12px;
   cursor: pointer;
   user-select: none;
@@ -139,30 +160,23 @@ text-decoration: underline;
 }
 
 /* BUTÕES DO FORMULÁRIO */
-.form_container button{
-background-color: #ffc106;
-margin-top: 30px;
-width: 100%;
-padding: 10px 0;
-border-radius: 10px;
+.form_container button {
+  background-color: #ffc106;
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
 }
-.login_sigup{
+
+.login_sigup {
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
 }
+
+
+small{
+  color:#e63636;
+  }
 /* FORMULÁRIO DE CADASTRO */
-
-.signup_form {
-  display: none;
-}
-
-.form_container.active .signup_form{
-  display: block;
-
-}
-.form_container.active .login_form{
-  display: none;
-
-}
 /* ------------------------------------- */

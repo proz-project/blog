@@ -33,7 +33,7 @@
    <script src="menu.js" defer></script>
    <script src="script.js" defer></script>
   
-    <title>Login</title>
+    <title>Cadastro</title>
   </head>
 <body>
   <header>
@@ -41,7 +41,7 @@
 
       <div class="logo">
         <a href="#">
-          <img src="./img/logoAtualizadaremovebg-preview.png" alt="logo-EducaPro" width="150px" height="150px">
+          <img src="./img/6-removebg-preview.png" alt="logo-EducaPro" width="150px" height="150px">
         </a>
       </div>
       <nav class="nav__menu">
@@ -107,42 +107,46 @@
 <!-- HOME -->
       <section id="login" class="home">
         <div class="form_container">
-          <!-- <i class="uil uil-times form_close"></i> -->
-          <div class="form login_form">
-            <form id="form" action="#">
-              <h2>login</h2>
+          <!-- PARTE DO CADASTRO NOVO -->
+          <div class="form signup_form">
+            <form  id="form" action="#">
+              <h2 class="login-l1">Cadastre-se
+              </h2>
               <div class="input_box">
-                <input type="email" id="email" placeholder="digite seu email" required class="required" />
+                <input id="email" type="email" placeholder="digite seu email" required class="required"/>
                 <i class="uil uil-envelope-alt email"></i>
               </div>
-              <small class="small-required" id="textEmail"></small>
+              <small id="textEmail" class="small-required"></small>
               <div class="input_box">
                 <input
                 id="password"
-                type="password"
-                placeholder="digite sua senha"
-                required
+                  type="password"
+                  placeholder="Criar senha"
+                  required
                 class="required"/>
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>
-              <small class="small-required" id="textPassword"></small>
-              <div class="option_field">
-                <span class="checkbox">
-                  <input type="checkbox" id="check" />
-                  <label for="check">Lembre de mim</label>
-                </span>
-                <a href="#" class="forgot_pw">Esqueceu a senha</a>
+              <small id="textPassword" class="small-required"></small>
+              <div class="input_box">
+                <input
+                id="password-test"
+                  type="password"
+                  placeholder="confirmar senha"
+                  required
+                oninput="CompararValores()"
+                  class="required"/>
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
               </div>
-              <button type="submit" class="button">Conecte-se agora</button>
-              <small class="small-required" id="textForm"></small>
+              <small id="textpassword-test" class="small-required"></small>
+              <button class="button">Conecte-se agora</button>
+              <small id="textForm"></small>
               <div class="login_sigup">
-                Não tem uma conta? <a href="cadastro.html" id="signup">inscrever-se
-                </a>
+                Já tem uma conta? <a href="./login.html" id="login">login</a>
               </div>
             </form>
           </div>
-          <!-- PARTE DO CADASTRO NOVO -->
         </div>
       </section>
     </main>
