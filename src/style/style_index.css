@@ -2,30 +2,45 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
-/* GERAL*/
+h1,h2,h3 {
+  text-align: center;
+  color: hsl(0, 0%, 0%)
+}
+
+article p {
+  font-size: 1.5em;
+  color: black;
+  padding: 0 20px 0 20px;
+}
+
 body {
   height: 100vh;
   background-color: #303841;
 }
+main{
+  background-color: #f2f2f2;
+}
 
 .cabecalho__conteudo{
   /* max-width: 1400px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */ 
 
-  
 }
 /* ESTILO CABEÇALHO */
 header{
   padding: 5px 4%;
   padding-bottom: 5px;
   background-color: #303841;
+  /* height: auto  ; */
   
 }
 
 header > .cabecalho__conteudo{
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   height:150% ;
@@ -76,11 +91,6 @@ header .btn-login button:hover{
 }
 /* Fim ESTILO CABEÇALHO */
 
-/*  Libras */
- .libras{
-  padding-top: px;
- }
-/* Fim libras */
 
 /* inicio menu mobile */
 
@@ -138,8 +148,8 @@ header .btn-login button:hover{
 
 }
 
-.overlay-menu{
-  background-color:#303841 ;
+#overlay-menu{
+  background-color:#912557 ;
   width: 100%;
   right: 100%;
   position: fixed;
@@ -148,10 +158,10 @@ header .btn-login button:hover{
   z-index: 88888;
  display: none;
 }
-
-
 /* fim menu mobile */
-/* inicio cursor de acessibilidade */
+
+
+/* inicio cursor scroll */
 .cursor {
   z-index: 1000;
   position: fixed;
@@ -174,40 +184,73 @@ header .btn-login button:hover{
   visibility: visible;
   opacity: 1;
 }
-/* Fim de cursor acessibilidade */
+/* Fim de cursorscroll */
 
-
+/* inicio main */
 main {
   /* background-color: #ffc106; */
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 10;
   width: auto;
   height: auto;
 }
 h1, h2{
   padding: 20px;
-  text-align: center;
-}
-
+  text-align: center;}
+ /*Fim main  */
 /* aside {
   background-color: rgba(239, 212, 212, 0.74);
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
   width: 30%;
   height: 100%;
   
 }  */
 
 
-/* inicio footer*/
-footer {
- 
-  background-color: #303841;
-  width: 100%;
 
- 
-  padding: 8px;
+
+.icon-redesocial {
+  position: relative;
+}
+
+
+.icon-redesocial ul {
+  display:flex;
+  flex-direction:row;
+  position: relative;
+  list-style: none;
+  align-items: right;
+}
+
+.icon-redesocial ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.subTitle-white {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 0 20px 20px 20px;
+}
+
+.card-body {
+  height: auto;
+}
+
+.btn-card {
+  background: #ffc106;
+  color: #000;
+}
+
+   /* inicio footer*/
+footer {
+   background-color: #303841;
+  width: 100%;
+   padding: 8px;
 }
 
 footer > .footer_conteudo{ 
@@ -224,9 +267,7 @@ footer > .footer_conteudo{
 }
 .icon-redesocial{
   padding-top: 15px;
-
 }
-
 
  .icon-redesocial ul {
 display: flex;
@@ -246,13 +287,10 @@ footer a{
   
 }
 footer a:hover{
-
   transform: scale(1.08);
   transition: 2s;;
 }
-
-/* .icon-redesocial a:hover{
-} */
+/* .icon-redesocial a:hover{} */
 .icon_footer img{
   border-radius: 60px;
   background-color:#ffc106;
@@ -266,7 +304,7 @@ footer a:hover{
   
 
 }
-/* fim footer */
+   /* fim footer */
 
 
 /* #logo-principal {
@@ -288,14 +326,23 @@ footer a:hover{
 } */
 /* seçao main*/
 .banner {
-  background-color: rgb(209, 194, 107);
+  /* background-color: rgb(209, 194, 107); */
+  background-color: #f2f2f2;
   text-align: center;
+  padding-top: 20px;
+}
+
+.banner-title {
+  color: black;
+  padding: none;
+  margin: none;
 }
 
 .container {
+  text-align: center;
   max-width: 1440px;
   margin: 0 auto;
-  /**padding: 20px;**/
+  padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -449,7 +496,7 @@ footer a:hover{
 }
 
 /*Responsividade*/
-@media screen  and (max-width: 1020px){
+@media screen  and (min-width:300px) and (max-width: 1020px){
 
 
    /* nav-menu */
@@ -471,32 +518,15 @@ footer a:hover{
     .footer_conteudo> p{
       margin: 0 auto;
     }
+     /* menu mobile */
+     .menu-mobile nav ul{
 
-     
-
-  /* .cabecalho{
-    flex-direction: column;
-  } */
-
-  /* nav {
-    flex-direction: row;
-    font-size: 1.rem;
-  } */
-
-  
-}
-
-@media screen and (max-width: 300px) {
-  .nav__menu,     .btn-login{
-    /* o menu desaspareci */
-    display: none;
-
-    }
- .footer_conteudo{
-      flex-direction: column-reverse;
+      text-align: center;
     }
 
+ 
 }
+
 
 @media screen and (min-width: 1020px){
   .menu-mobile, .btn-abrir-menu{
@@ -506,4 +536,3 @@ footer a:hover{
   
   }
 }
- 
